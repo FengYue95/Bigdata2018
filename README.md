@@ -17,8 +17,20 @@
 
 ### 作品
 智慧校园云平台
-Tornado+ BootStrap+ Echart
+Tornado+ BootStrap+ Echart+ Gephi
 * 答辩PPT
-* 答辩视频
 * 网站源码
-  
+
+![智慧校园云平台](https://github.com/FengYue95/Bigdata2018/blob/master/img/1.PNG)
+![智慧校园云平台](https://github.com/FengYue95/Bigdata2018/blob/master/img/2.PNG)
+![智慧校园云平台](https://github.com/FengYue95/Bigdata2018/blob/master/img/3.PNG)
+
+## 算法赛简介
+
+### 目的&数据：
+给出2017年1-10月份的校园手机终端位置数据，预测11月和12月的每个地点每个小时的人数。
+
+### 作品
+规则模型+Xgboost
+* 算法代码
+* 天气/课表/活动信息爬取代码
