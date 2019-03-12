@@ -1,0 +1,2741 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="/static/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-brands.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-brands.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-regular.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-regular.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-solid.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-solid.min.css">
+    <!--<link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome-all.min.css">-->
+
+    <link rel="stylesheet" href="/static/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="/static/vendor/chartist/css/chartist-custom.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="/static/css/demo.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/favicon.png">
+</head>
+
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="brand">
+        <a href="/index"><span style="font-size: 20px;"><i class="fas fa-graduation-cap"></i>&emsp;智慧校园云平台</span></a>
+    </div>
+    <div class="container-fluid">
+        <div class="navbar-btn">
+            <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
+        </div>
+        <div class="navbar-btn navbar-btn-right">
+            <a class="btn btn-success update-pro"
+               href="/download" target="_self"
+               title="Download PPT" target="_blank"><i class="fa fa-rocket"></i> <span> PPT 下载</span></a>
+        </div>
+
+        <div id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="/static/img/member.jpeg"
+                                                                                    class="img-circle" alt="Avatar">
+                        <span>Parsifal</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><img src="/static/img/member.jpeg"
+                                             style="width: 20px;height: 20px;margin-right: 10px;" class="img-circle"
+                                             alt="Avatar"><span>杜欣远</span></a>
+                        </li>
+                        <li><a href="#"><img src="/static/img/member.jpeg"
+                                             style="width: 20px;height: 20px;margin-right: 10px;" class="img-circle"
+                                             alt="Avatar"><span>冯玥</span></a>
+                        </li>
+                        <li><a href="#"><img src="/static/img/member.jpeg"
+                                             style="width: 20px;height: 20px;margin-right: 10px;" class="img-circle"
+                                             alt="Avatar"><span>李想</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- LEFT SIDEBAR -->
+    <div id="sidebar-nav" class="sidebar">
+        <div class="sidebar-scroll">
+            <nav>
+                <ul class="nav">
+                    <!--<li><a href="index.html" class="active"><i class="lnr lnr-home"></i> <span>Campus Overview</span></a></li>-->
+                    <li>
+                        <a href="#subPages1" data-toggle="collapse" class="collapsed"><i class="lnr lnr-home"></i>
+                            <span>校园概况</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="subPages1" class="collapse in ">
+                            <ul class="nav">
+                                <li><a href="/index#本科生入学概况" class=""><i class="lnr lnr-chart-bars"></i>
+                                    <span>在校生人数</span></a></li>
+                                <li><a href="/index#院系分布" class=""><i class="lnr lnr-apartment"></i>
+                                    <span>院系分布</span></a>
+                                </li>
+                                <li><a href="/index#男女比例" class=""><i class="lnr lnr-heart"></i> <span>男女比例</span></a>
+                                </li>
+                                <li><a href="/index#生源地" class=""><i class="lnr lnr-earth"></i> <span>生源地</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#subPages2" data-toggle="collapse" class="collapsed"><i class="lnr lnr-chart-bars"></i>
+                            <span>校园生活</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="subPages2" class="collapse in">
+                            <ul class="nav">
+                                <li><a href="/life#课程统计" class=""><i class="lnr lnr-pencil"></i> <span>学习</span></a>
+                                </li>
+                                <li><a href="/life#作息" class=""><i class="lnr lnr-eye"></i> <span>作息</span></a></li>
+                                <li><a href="/life#消费" class=""><i class="lnr lnr-cart"></i> <span>消费</span></a></li>
+                                <li><a href="/life#上网" class=""><i class="lnr lnr-laptop-phone"></i>
+                                    <span>上网</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/social"><i class="lnr lnr-users"></i>
+                            <span>校园社交</span> </a>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- END LEFT SIDEBAR -->
+    <!-- MAIN -->
+    <div class="main">
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="container-fluid">
+                <!-- OVERVIEW -->
+                <a name="课程统计"></a>
+                <div class="panel panel-headline">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">课程统计</h3>
+                        <p class="panel-subtitle">Mar 1, 2018 - Jul 1, 2018</p>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <!--4-北邮课程格子图-->
+                                <div id="BUPT_lesson" style="height:300px;"></div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="weekly-summary text-center">
+                                    <i class="lnr lnr-pointer-left"></i><span class="number">&nbsp;710</span>
+                                    <span class="info-label">北京邮电大学</span>
+                                </div>
+                                <div class="weekly-summary text-center">
+                                    <span class="number">NaN</span>
+                                    <span class="info-label">北京师范大学</span>
+                                </div>
+                                <a name="院系分布"></a>
+                                <div class="weekly-summary text-center">
+                                    <span class="number">697</span><i class="lnr lnr-pointer-right"></i>
+                                    <span class="info-label">中国农业大学</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--5-农大课程格子图-->
+                                <div id="CAU_lesson" style="height:300px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- 2-北邮课程关键词 -->
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">北邮课程关键词</h3>
+                                <div class="right">
+                                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div id="BUPT_word" style="height:400px;"></div>
+                            </div>
+                        </div>
+                        <!-- END MULTI CHARTS -->
+                    </div>
+                    <div class="col-md-6">
+                        <!-- 2-农大课程关键词 -->
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">农大课程关键词</h3>
+                                <div class="right">
+                                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div id="CAU_word" style="height:400px;"></div>
+                            </div>
+                        </div>
+                        <!-- END MULTI CHARTS -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-headline">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">上课连网情况分析</h3>
+                                <p class="panel-subtitle">Analysis of the condition of using Internet in class</p>
+                            </div>
+                            <div class="panel-body">
+                                <p>上课时间玩手机，一直都是大学课堂教育的一个痛点。我们旨在通过挖掘分析学生上课期间的上网模式，给教育管理者以启示，希望通过更清晰和明确的数据分析展示，推进更有富有成效的大学课堂教育。</p>
+                                <p>我们分析了2017-2018学年秋季学期开设的工程数学、通信原理、计算机通信与网络、情景英语视听说、毛泽东思想与中国特色社会主义理论体系概论（以下简称“毛概”），五门课程，分别是数学基础课，专业基础课，专业选修课，英语选修课，政治必修课五个门类。我们统计了这五门课程中从上课前10分钟到下课后10分钟之内的校园网登陆情况。</p>
+                                <p>毛概课堂的首个连网高峰出现在开始上课至上课十分钟这段时间内，之后缓慢下降，直到在第一堂课结束的课间，又出现了校园网集中登陆的增长情况。在这之后，登录校园网关的人数保持稳定，直到课程结束；而作为专业必修课的通信原理课程，连网人数从开课前10分钟直到课程结束都保持在一个较低水平，在课程结束后的10分钟内出现了联网的最高峰。数据表明，大部分学生在通信原理课上认真听讲，上课期间很少有人登陆校园网，而是在课程结束之后才进行登陆，因此在下课后出现了登陆次数的顶点。两门课程呈现出的两种截然不同的校园网登陆模式。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-headline " align='center'>
+                    <div class="panel-heading">
+                        <h3 class="panel-title">不同课程上课连网人数百分比</h3>
+                        <p class="panel-subtitle">Sep 1, 2017 - Jan 1, 2018</p>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-1" align="center"></div>
+                            <div class="col-md-2" align="center">
+                                <div class="panel">
+                                    <div class="panel-body">
+                                        <br>
+                                        <div class="easy-pie-chart" id="jitongwang" data-percent="11.3">
+                                            <span class="percent">11.3</span>
+                                            <br><br>
+                                            <h4>计通网</h4>
+                                            <!--<span class="label label-success">few</span>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="panel">
+                                    <div class="panel-body">
+                                        <br>
+                                        <div class="easy-pie-chart" id="math" data-percent="13.4">
+                                            <span class="percent">13.4</span>
+                                            <br><br>
+                                            <h4>工程数学</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="panel">
+                                    <div class="panel-body">
+                                        <br>
+                                        <div class="easy-pie-chart" id="tongyuan" data-percent="15.2">
+                                            <span class="percent">15.2</span>
+                                            <br><br>
+                                            <h4>通信原理</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="panel">
+                                    <div class="panel-body">
+                                        <br>
+                                        <div class="easy-pie-chart" id="english" data-percent="23.3">
+                                            <span class="percent">23.3</span>
+                                            <br><br>
+                                            <h4>情景英语</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="panel">
+                                    <div class="panel-body">
+                                        <br>
+                                        <div class="easy-pie-chart" id="maogai" data-percent="35.7">
+                                            <span class="percent">35.7</span>
+                                            <br><br>
+                                            <h4>毛概</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- 2-不同课程连网起始时间分布 -->
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">不同课程连网起始时间分布</h3>
+                                <div class="right">
+                                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div id="play_phone" style="height:400px;"></div>
+                            </div>
+                        </div>
+                        <!-- END MULTI CHARTS -->
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="panel panel-headline" style="height: 480px;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">情景英语异常值分析</h3>
+                                <p class="panel-subtitle">Analysis of the abnormal value of situational English</p>
+                            </div>
+                            <div class="panel-body">
+                                <p>我们对五门课程的课堂联网情况分周进行了统计，在情景英语这门课的第1周和第9周发现了课堂连网情况不同于其他周次的异常峰值，我们对这两个异常点进行了分析。</p>
+                                <p>右图横轴代表正式上课的第一周开始到2017年最后一周，纵轴表示该周次课程的连网人数，课容量为30人。一个教学单元分为两节课，正常情况下登陆校园网关的时间点会均匀分布在两节课中，但情景英语第一周的24个登陆记录中有23个是在09:18左右集中登陆的，第9周的26个记录中有25人是在第一节课集中登陆的。借助自身对于这门课的的学习经历，我们认为，这两周的异常值均来源于教师引导的规模行动。情景英语视听说这门课程是在教学机房中进行的，教学老师会要求学生在第一周登陆、注册或上网提交一些相关的学生信息，而在第九周课堂上提交期中作业，所以产生了大量的集中登陆人群。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="panel" style="height: 480px;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">情景英语分周连网情况统计</h3>
+                                <div class="right">
+                                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div id="env_english" style="height:400px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--作息分布-->
+                <a name="作息"></a>
+                <div class="panel panel-headline">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">日常作息</h3>
+                        <p class="panel-subtitle">Jan 1, 2017 - Dec 1, 2017</p>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="far fa-sun"></i></span>
+                                    <p>
+                                        <span class="number">4.47%</span>
+                                        <span class="title">北邮 | 早起人群</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="far fa-moon"></i></span>
+                                    <p>
+                                        <span class="number">10.55%</span>
+                                        <span class="title">北邮 | 晚睡人群</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="far fa-sun"></i></span>
+                                    <p>
+                                        <span class="number">7.44%</span>
+                                        <span class="title"> 北师 | 早起人群 </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="far fa-moon"></i></span>
+                                    <p>
+                                        <span class="number">13.34%</span>
+                                        <span class="title"> 农大 | 晚睡人群 </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--结束作息分布-->
+                <!--北邮工作日起床时间-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">北邮工作日起床时间分布图</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="BUPT_getup_weekday" style="height:400px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--北邮休息日起床时间-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">北邮休息日起床时间分布图</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="BUPT_getup_weekend" style="height:400px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--起床时间对比-->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="panel panel-headline">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">工作日作息时间分析</h3>
+                                <p class="panel-subtitle">Timetable analysis of weekdays</p>
+                            </div>
+                            <div class="panel-body">
+                                <p>起床时间是按照每个人每天的最早消费记录来确定的。通过数据我们发现，随着教学周的推后，两所高校工作日的整体起床时间也在一直推迟，六点到八点之间的起床人群在缓慢减少，而八点到十点之间的人群在缓慢增加。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-headline">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">双休日作息时间分析</h3>
+                                <p class="panel-subtitle">Timetable analysis of weekend</p>
+                            </div>
+                            <div class="panel-body">
+                                <p>对比工作日的起床时间，双休日大多数人的起床时间都在八点钟以后，这在两个学校的数据中均有体现。同时我们发现，农大的同学相比北邮的同学在周末起床时间更加平稳和规律，北邮人的周末起床时间更加不固定。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-headline">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">异常作息时间分析</h3>
+                                <p class="panel-subtitle">Analysis of abnormal timetable.</p>
+                            </div>
+                            <div class="panel-body">
+                                <p>从两校的起床时间我们可以看出，正式上课的第二周周内起床情况出现了异常值，起床时间分布相较正常的教学周大幅度推后。经查证，正式上课的第二周处在十一放假期间，所以同学们的作息更符合周末的作息模式。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--北师工作日起床时间-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">北师工作日起床时间分布图</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="BNU_getup_weekday" style="height:400px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--北师休息日起床时间-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">北师休息日起床时间分布图</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="BNU_getup_weekend" style="height:400px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--睡觉时间-->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="panel panel-headline">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">北邮入睡时间分布</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="BUPT_sleep" style="height:400px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-headline">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">睡眠时间分析</h3>
+                                <p class="panel-subtitle">Analysis of sleep time </p>
+                            </div>
+                            <div class="panel-body" style="height: 405px;">
+                                <p>通过统计校园网的最后在线时刻，我们得到了北邮和农大同学的入睡时间分布图。</p>
+                                <p>统计的时间段为晚上十点到第二天的凌晨三点。</p>
+                                <p>对于同一个学校来说，周内和周末的作息情况存在明显的差异，周末会有更多的同学选择晚睡。</p>
+                                <p>观察总体的入睡时间，农大的同学的入睡时间更晚，凌晨一点之后入睡的接近百分之五十，而接近百分之八十的北邮人选择在一点前入睡。</p>
+                                <p>在十点至十一点期间入睡的“早睡”人群，农大的比例比北邮更高一点。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-headline">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">农大入睡时间分布</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="CAU_sleep" style="height:400px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a name="消费"></a>
+                <!--消费-->
+                <div class="panel panel-headline">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">消费统计</h3>
+                        <p class="panel-subtitle">Jan 1, 2017 - Dec 1, 2017</p>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="fas fa-money-check-alt"></i></span>
+                                    <p>
+                                        <span class="number">￥526</span>
+                                        <span class="title">北邮 | 人均月消费</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="fas fa-money-check-alt"></i></span>
+                                    <p>
+                                        <span class="number">￥375</span>
+                                        <span class="title">北师 | 人均月消费</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="fas fa-money-check-alt"></i></span>
+                                    <p>
+                                        <span class="number">￥736万</span>
+                                        <span class="title">北邮 | 月均总消费</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="fas fa-money-check-alt"></i></span>
+                                    <p>
+                                        <span class="number">￥673万</span>
+                                        <span class="title">北师 | 月均总消费</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--结束消费-->
+                <div class="row">
+                    <div class="col-md-7">
+                        <!-- 2-消费和洗浴高峰 -->
+                        <div class="panel" style="height:475px;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">购物和洗浴折线图</h3>
+                                <div class="right">
+                                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div id="shop_bath" style="height:420px;"></div>
+                            </div>
+                        </div>
+                        <!-- END MULTI CHARTS -->
+                    </div>
+                    <div class="col-md-5">
+                        <div class="panel panel-headline" style="height:475px;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">消费记录分析</h3>
+                                <p class="panel-subtitle">Analysis of consumption records</p>
+                            </div>
+                            <div class="panel-body">
+                                <p>通过分析北邮的一卡通记录，我们获得了2017年非放假时期购物和洗浴记录，并绘制出了消费人数随时间变化的趋势图，时间为早6点至晚12点。</p>
+                                <p>购物记录存在三个高峰，分别为十二点左右（午饭时间），十八点左右（晚饭时间）和二十二点左右（夜宵时间）。午饭时间的高峰较尖锐，说明吃饭时间比较集中；晚饭和夜宵时间的高峰持续两三个小时，说明晚饭和夜宵的时间分布较分散。在下午三点到四点存在一个小高峰，说明下午第一节课下课后会有部分同学进行购物。</p>
+                                <p>洗澡人数从五六点开始上升，高峰出现在十点至十一点这段时间。值得一提的是，洗澡高峰与购物的第三个高峰时间上近似重合，经过计算，在晚九点以后洗澡的同学有11.3%会选择去超市购物，而晚九点去超市购物人群占总人数的5.8%。这说明很大一部分同学会在洗澡后选择在超市购物。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--男女洗澡时长-->
+                <div class="row">
+                    <div class="col-md-7">
+                        <!-- 2-消费和洗浴高峰 -->
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">不同月份平均洗澡次数变化图</h3>
+                                <div class="right">
+                                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div id="bath_month" style="height:400px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <!-- 2-消费和洗浴高峰 -->
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Boys & Girls 洗澡时长分布</h3>
+                                <div class="right">
+                                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div id="bath_time" style="height:400px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a name="上网"></a>
+                <div class="panel panel-headline">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">上网统计</h3>
+                        <p class="panel-subtitle">Jan 1, 2017 - Dec 31, 2017</p>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="fas fa-money-check-alt"></i></span>
+                                    <p>
+                                        <span class="number">418.93TB</span>
+                                        <span class="title">北邮 | 总上行流量</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="fas fa-money-check-alt"></i></span>
+                                    <p>
+                                        <span class="number">1807.03TB</span>
+                                        <span class="title">北邮 | 总下行流量</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="fas fa-money-check-alt"></i></span>
+                                    <p>
+                                        <span class="number">52.00TB</span>
+                                        <span class="title">农大 | 总上行流量</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="fas fa-money-check-alt"></i></span>
+                                    <p>
+                                        <span class="number">331.38TB</span>
+                                        <span class="title">农大 | 总下行流量</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--北邮不同时段流量-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">北邮日均不同时段在线人数</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="BUPT_net" style="height:400px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--农大不同时段流量-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">农大日均不同时段在线人数</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="CAU_net" style="height:400px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--上网流量文字分析-->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="panel panel-headline">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">总体趋势分析</h3>
+                                <p class="panel-subtitle">Analysis of overall trend</p>
+                            </div>
+                            <div class="panel-body">
+                                <p>我们分别对北邮和农大的24小时日均校园网在线人数进行了统计。从总体的统计结果来看，两所学校的在线人数从早晨7点钟开始逐渐上升，中午12时左右达到小高峰，伴随着午休时间的到来，上网在线人数有轻微下降的趋势。午后3点开始，增长态势稳定，晚上9点迎来一波大的增幅之后，在晚10点迎来了在线人数最高峰。深夜零时之后，在线人数大幅下跌，并于凌晨3点左右回归最低点。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-headline">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">周中周末对比分析</h3>
+                                <p class="panel-subtitle">Analysis of weekday and weekend</p>
+                            </div>
+                            <div class="panel-body">
+                                <p>对比周中和周末同时段的上网在线人数，我们发现，两所高校周末在深夜23点到凌晨4点这段时间的在线人数明显高于工作日；另一方面，虽然工作日和休息日的在线人数都是从早晨7点开始逐渐上升，但周末早晨7点到8点的在线人数明显低于周中。以上结果反映出同学们周中和周末的作息模式不同，周末会有更多的同学选择晚睡与晚起。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-headline">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">两校整体对比分析</h3>
+                                <p class="panel-subtitle">Analysis of BUPT and CAU</p>
+                            </div>
+                            <div class="panel-body">
+                                <p>对比北邮和农大两所高校的日均在线人数，我们发现，农大凌晨0点到4点的在线人数要被北邮的人数高一些。另一方面，北邮在凌晨2点到6点之间的在线人数无论周中和周末没有较大的差异，而农大在周末上述时间段的人数要略高于工作日的在线人数。这反映出农大同学的入睡时间略晚于北邮同学。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END MAIN -->
+    <div class="clearfix"></div>
+    <footer>
+        <div class="container-fluid">
+            <p class="copyright">Copyright &copy; Parsifal All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+<!-- END WRAPPER -->
+<!-- Javascript -->
+<script src="/static/vendor/jquery/jquery.min.js"></script>
+<script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="/static/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+<script src="/static/vendor/chartist/js/chartist.min.js"></script>
+<script src="/static/scripts/klorofil-common.js"></script>
+<!--引入echarts-->
+<script src="/static/vendor/echart/echarts.min.js"></script>
+<script src="/static/vendor/echart/echarts-wordcloud.js"></script>
+<script src="/static/vendor/echart/echarts-wordcloud.min.js"></script>
+<script>
+    function load_buptlesson() {
+        var myChart = echarts.init(document.getElementById('BUPT_lesson'));
+        var data = [
+            {"value": 35762, "name": "程序设计实践"},
+            {"value": 33240, "name": "电子工艺实习"},
+            {"value": 28272, "name": "军事理论"},
+            {"value": 24794, "name": "现代通信技术"},
+            {"value": 23607, "name": "电路综合实验"},
+            {"value": 22208, "name": "管理研讨"},
+            {"value": 15788, "name": "大学英语4"},
+            {"value": 14910, "name": "计算机实习"},
+            {"value": 14892, "name": "数据结构课程设计"},
+            {"value": 14280, "name": "测控电路课程设计"},
+            {"value": 13428, "name": "微处理器系统设计"},
+            {"value": 13426, "name": "JAVA高级语言程序设计"},
+            {"value": 12000, "name": "综合英语（B）"},
+            {"value": 11405, "name": "软件工程"},
+            {"value": 10920, "name": "邮政快递软件创新设计（创新创业实践）"},
+            {"value": 10530, "name": "机械设计课程设计"},
+            {"value": 10408, "name": "数字电路与逻辑设计"},
+            {"value": 10400, "name": "微机系统与接口技术课程设计"},
+            {"value": 8460, "name": "大型程序设计实践"},
+            {"value": 8128, "name": "面向对象程序设计与实践（C++）2"},
+            {"value": 7718, "name": "体育专项(下)"},
+            {"value": 7354, "name": "近代物理实验"},
+            {"value": 7163, "name": "短片创作实践"},
+            {"value": 6840, "name": "互动媒体课程设计"},
+            {"value": 6585, "name": "数据库系统原理课程设计"}]
+
+        // for (var n in data) {
+        //     data[n]['name'] = data[n]['name'] + ' ' + data[n]['value']
+        // }
+
+        var option = {
+            // backgroundColor: "#000",
+            title: {
+                //text: '北邮课程格子',
+                //subtext: ' ',
+                left: '50%',
+                top: '30',
+                textAlign: 'center',
+                textStyle: {
+                    color: "#000",
+                    fontWeight: 'normal',
+                }
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: "{b}"
+            },
+            series: [{
+                type: 'treemap',
+                width: '100%',
+                height: '100%',
+                roam: false, //是否开启拖拽漫游（移动和缩放）
+                nodeClick: false, //点击节点后的行为,false无反应
+                breadcrumb: {
+                    show: false
+                },
+                label: { //描述了每个矩形中，文本标签的样式。
+                    normal: {
+                        show: true,
+                        position: ['10%', '40%']
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        show: true,
+                        textStyle: {
+                            color: '#fff',
+                            fontSize: 16,
+                        },
+                        borderWidth: 1,
+                        borderColor: '#fff',
+                    },
+
+                    emphasis: {
+                        label: {
+                            show: true
+                        }
+                    }
+                },
+                data: data
+            }]
+        };
+        myChart.setOption(option);
+    }
+    load_buptlesson();
+
+    function load_CAUlesson() {
+        var myChart = echarts.init(document.getElementById('CAU_lesson'));
+        var data = [
+            {"value": 13823, "name": "大学生心理健康"},
+            {"value": 11341, "name": "文献检索"},
+            {"value": 9528, "name": "大学生职业生涯规划"},
+            {"value": 8210, "name": "大学英语（四）"},
+            {"value": 8220, "name": "初级日语会话"},
+            {"value": 5648, "name": "土壤学B"},
+            {"value": 3024, "name": "经济信息管理"},
+            {"value": 2937, "name": "VB程序设计"},
+            {"value": 2448, "name": "生物化学B"},
+            {"value": 2268, "name": "C++程序设计"},
+            {"value": 2262, "name": "C语言程序设计"},
+            {"value": 2176, "name": "伦理学基础"},
+            {"value": 2064, "name": "兽医免疫学实验"},
+            {"value": 1946, "name": "网络经济"},
+            {"value": 1872, "name": "动物营养学"},
+            {"value": 1854, "name": "合同法"},
+            {"value": 1760, "name": "多媒体技术及应用"},
+            {"value": 1585, "name": "资产评估学"},
+            {"value": 1572, "name": "农业经济管理"},
+            {"value": 1442, "name": "体育舞蹈（1）"},
+            {"value": 1416, "name": "食品安全与日常饮食"},
+            {"value": 1352, "name": "农业气象学B"},
+            {"value": 1216, "name": "俄语二外"},
+            {"value": 1194, "name": "市场营销"},
+            {"value": 1176, "name": "普通昆虫学"}
+
+        ]
+
+        // for (var n in data) {
+        // 	data[n]['name'] = data[n]['name'] + ' ' + data[n]['value']
+        // }
+
+        var option = {
+            // backgroundColor: "#000",
+            title: {
+                //text: '农大课程'
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: "{b}"
+            },
+            series: [{
+                type: 'treemap',
+                width: '100%',
+                height: '100%',
+                roam: false, //是否开启拖拽漫游（移动和缩放）
+                nodeClick: false, //点击节点后的行为,false无反应
+                breadcrumb: {
+                    show: false
+                },
+                label: { //描述了每个矩形中，文本标签的样式。
+                    normal: {
+                        show: true,
+                        position: ['10%', '50%']
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        show: true,
+                        textStyle: {
+                            color: '#fff',
+                            fontSize: 16,
+                        },
+                        borderWidth: 1,
+                        borderColor: '#fff',
+                    },
+
+                    emphasis: {
+                        label: {
+                            show: true
+                        }
+                    }
+                },
+                data: data
+            }]
+        };
+        myChart.setOption(option);
+    }
+    load_CAUlesson();
+
+    function load_BUPTword() {
+        var myChart = echarts.init(document.getElementById('BUPT_word'));
+        var option = {
+            title: {
+                //text: '北邮课程关键词',
+                x: 'center',
+                textStyle: {
+                    fontSize: 23
+                }
+
+            },
+            tooltip: {
+                show: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {
+                        iconStyle: {
+                            normal: {
+                                color: '#FFFFFF'
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: '关键词',
+                type: 'wordCloud',
+                //size: ['9%', '99%'],
+                sizeRange: [6, 66],
+                //textRotation: [0, 45, 90, -45],
+                rotationRange: [-45, 90],
+                //shape: 'circle',
+                textPadding: 0,
+                autoSize: {
+                    enable: true,
+                    minSize: 6
+                },
+                textStyle: {
+                    normal: {
+                        color: function () {
+                            return 'rgb(' + [
+                                    Math.round(Math.random() * 160),
+                                    Math.round(Math.random() * 160),
+                                    Math.round(Math.random() * 160)
+                                ].join(',') + ')';
+                        }
+                    },
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowColor: '#333'
+                    }
+                },
+                data: [{
+                    name: "Jayfee",
+                    value: 666
+                }, {
+                    name: "Nancy",
+                    value: 520
+                }]
+            }]
+        };
+
+        var JosnList = [];
+
+        JosnList.push(
+            {name: "网络", value: 37},
+            {name: "数字", value: 34},
+            {name: "通信", value: 34},
+            {name: "计算机", value: 33},
+            {name: "数学", value: 32},
+            {name: "电子", value: 31},
+            {name: "智能", value: 30},
+            {name: "创新", value: 30},
+            {name: "移动", value: 29},
+            {name: "信息", value: 29},
+            {name: "安全", value: 26},
+            {name: "互连网", value: 26},
+            {name: "创业", value: 25},
+            {name: "信息系统", value: 25},
+            {name: "电子商务", value: 24},
+            {name: "媒体", value: 23},
+            {name: "软件", value: 23},
+            {name: "文化", value: 21},
+            {name: "国际", value: 20},
+            {name: "赏析", value: 20},
+            {name: "语言", value: 19},
+            {name: "现代", value: 19},
+            {name: "高级", value: 17},
+            {name: "写作", value: 17},
+            {name: "电路", value: 17},
+            {name: "中国", value: 17},
+            {name: "邮政", value: 16},
+            {name: "控制", value: 15},
+            {name: "双创", value: 15},
+            {name: "西方", value: 15},
+            {name: "大学物理", value: 15},
+            {name: "计算", value: 15},
+            {name: "信息安全", value: 15},
+            {name: "经济学", value: 14},
+            {name: "制作", value: 14},
+            {name: "视听", value: 14},
+            {name: "模拟", value: 14},
+            {name: "高等数学", value: 14},
+            {name: "鉴赏", value: 14},
+            {name: "网络安全", value: 14},
+            {name: "快递", value: 14},
+            {name: "编程", value: 14},
+            {name: "经济", value: 14},
+            {name: "嵌入式", value: 13},
+            {name: "算法", value: 13},
+            {name: "云", value: 12},
+            {name: "动画", value: 12},
+            {name: "仿真", value: 12},
+            {name: "中级", value: 12},
+            {name: "处理", value: 12},
+            {name: "实训", value: 11},
+            {name: "说", value: 11},
+            {name: "科学", value: 11},
+            {name: "社会", value: 11},
+            {name: "电子电路", value: 11},
+            {name: "初级", value: 11},
+            {name: "日本", value: 10},
+            {name: "素描", value: 10},
+            {name: "Ⅰ", value: 10},
+            {name: "艺术", value: 10},
+            {name: "金融", value: 10},
+            {name: "及其", value: 10},
+            {name: "数据结构", value: 10},
+            {name: "无线", value: 10},
+            {name: "影视", value: 9},
+            {name: "中外", value: 9},
+            {name: "服务", value: 9},
+            {name: "数学分析", value: 9},
+            {name: "开发", value: 9},
+            {name: "发展", value: 9},
+            {name: "规划", value: 9},
+            {name: "材料", value: 9},
+            {name: "信号", value: 9},
+            {name: "商务", value: 8},
+            {name: "信号处理", value: 8},
+            {name: "Java", value: 8},
+            {name: "项目", value: 8},
+            {name: "C", value: 8},
+            {name: "口语", value: 8},
+            {name: "课程", value: 8},
+            {name: "B", value: 8},
+            {name: "逻辑", value: 7},
+            {name: "产品", value: 7},
+            {name: "物", value: 7},
+            {name: "大学生", value: 7},
+            {name: "策划", value: 7},
+            {name: "测控", value: 7},
+            {name: "机械设计", value: 7},
+            {name: "电子学", value: 7},
+            {name: "信息处理", value: 7},
+            {name: "光", value: 7},
+            {name: "数据", value: 7},
+            {name: "测试", value: 7},
+            {name: "组织", value: 7},
+            {name: "色彩", value: 7},
+            {name: "微机", value: 7},
+            {name: "软件工程", value: 7},
+            {name: "C++", value: 7},
+            {name: "连网", value: 7},
+            {name: "中", value: 7},
+            {name: "科技", value: 7},
+            {name: "内容", value: 7},
+            {name: "A", value: 7},
+            {name: "翻译", value: 6},
+            {name: "Ⅱ", value: 6},
+            {name: "选读", value: 6},
+            {name: "工艺", value: 6},
+            {name: "造型", value: 6},
+            {name: "JAVA", value: 6},
+            {name: "投资", value: 6},
+            {name: "仪器", value: 6},
+            {name: "逻辑设计", value: 6},
+            {name: "法语", value: 6},
+            {name: "C语言", value: 6},
+            {name: "知识产权", value: 6},
+            {name: "操作系统", value: 6},
+            {name: "多媒体", value: 6},
+            {name: "学习", value: 6},
+            {name: "机械", value: 6},
+            {name: "II", value: 6},
+            {name: "项目管理", value: 6},
+            {name: "机器", value: 6},
+            {name: "口译", value: 6},
+            {name: "离散数学", value: 6},
+            {name: "构成", value: 6},
+            {name: "数字电路", value: 6},
+            {name: "实用", value: 6},
+            {name: "认识", value: 6},
+            {name: "数据挖掘", value: 6},
+            {name: "政策", value: 6},
+            {name: "合成", value: 6},
+            {name: "心理学", value: 6},
+            {name: "速写", value: 6},
+            {name: "电工", value: 6},
+            {name: "案例", value: 5},
+            {name: "形势", value: 5},
+            {name: "听力", value: 5},
+            {name: "实务", value: 5},
+            {name: "个人", value: 5},
+            {name: "会话", value: 5},
+            {name: "计算机网络", value: 5},
+            {name: "法律", value: 5},
+            {name: "微波", value: 5},
+            {name: "市场", value: 5},
+            {name: "体育", value: 5},
+            {name: "音乐", value: 5},
+            {name: "高等", value: 5},
+            {name: "过程", value: 5},
+            {name: "工业", value: 5},
+            {name: "信息论", value: 5},
+            {name: "心理健康", value: 5},
+            {name: "组成", value: 5},
+            {name: "法学", value: 5},
+            {name: "to", value: 5},
+            {name: "测量", value: 5},
+            {name: "前沿", value: 5},
+            {name: "物理学", value: 5},
+            {name: "泛读", value: 5},
+            {name: "Introduction", value: 5},
+            {name: "网络管理", value: 5},
+            {name: "电磁场", value: 5},
+            {name: "摄影", value: 5},
+            {name: "力学", value: 5},
+            {name: "文学", value: 5},
+            {name: "在线", value: 5},
+            {name: "汉语", value: 5},
+            {name: "光电", value: 5},
+            {name: "国际贸易", value: 5},
+            {name: "沟通", value: 5},
+            {name: "面向对象", value: 5},
+            {name: "终端", value: 5},
+            {name: "运营", value: 5},
+            {name: "经典", value: 5},
+            {name: "游戏", value: 5},
+            {name: "ERP", value: 4},
+            {name: "剪辑", value: 4},
+            {name: "电信", value: 4},
+            {name: "交换", value: 4},
+            {name: "和", value: 4},
+            {name: "数据分析", value: 4},
+            {name: "数据库系统", value: 4},
+            {name: "世界", value: 4},
+            {name: "光学", value: 4},
+            {name: "信息技术", value: 4},
+            {name: "信息科学", value: 4},
+            {name: "统计学", value: 4},
+            {name: "数据库", value: 4},
+            {name: "结构", value: 4},
+            {name: "营销学", value: 4},
+            {name: "人工智能", value: 4},
+            {name: "电影", value: 4},
+            {name: "工程图", value: 4},
+            {name: "解题", value: 4},
+            {name: "语音", value: 4},
+            {name: "通信网", value: 4},
+            {name: "接口技术", value: 4},
+            {name: "代数", value: 4},
+            {name: "I", value: 4},
+            {name: "传感", value: 4},
+            {name: "商务英语", value: 4},
+            {name: "欣赏", value: 4},
+            {name: "营销", value: 4},
+            {name: "战略", value: 4},
+            {name: "自动控制", value: 4},
+            {name: "运动", value: 4},
+            {name: "建模", value: 4},
+            {name: "Matlab", value: 4},
+            {name: "多媒体通信", value: 4},
+            {name: "审美", value: 4},
+            {name: "财务会计", value: 4},
+            {name: "多媒体技术", value: 4},
+            {name: "通信软件", value: 4},
+            {name: "密码", value: 4},
+            {name: "辅助设计", value: 4},
+            {name: "随机", value: 4},
+            {name: "汇编语言", value: 4},
+            {name: "信息网络", value: 4},
+            {name: "计算技术", value: 4},
+            {name: "无线通信", value: 4},
+            {name: "经营", value: 4},
+            {name: "公司", value: 4},
+            {name: "虚拟", value: 4},
+            {name: "论文", value: 4},
+            {name: "统计", value: 4},
+            {name: "选讲", value: 4},
+            {name: "简史", value: 4},
+            {name: "自动化", value: 4},
+            {name: "市场营销", value: 4},
+            {name: "检测", value: 4},
+            {name: "机器人", value: 4},
+            {name: "数字化", value: 3},
+            {name: "三维", value: 3},
+            {name: "动漫", value: 3},
+            {name: "调查", value: 3},
+            {name: "演讲", value: 3},
+            {name: "数值", value: 3},
+            {name: "社交", value: 3},
+            {name: "认知", value: 3},
+            {name: "戏剧", value: 3},
+            {name: "编码", value: 3},
+            {name: "Python", value: 3},
+            {name: "财务管理", value: 3},
+            {name: "短片", value: 3},
+            {name: "概念", value: 3},
+            {name: "and", value: 3},
+            {name: "Mathematics", value: 3},
+            {name: "国家", value: 3},
+            {name: "制造", value: 3},
+            {name: "计划", value: 3},
+            {name: "会计", value: 3},
+            {name: "WEB", value: 3},
+            {name: "双语", value: 3},
+            {name: "Systems", value: 3},
+            {name: "制度", value: 3},
+            {name: "产业", value: 3},
+            {name: "硬件", value: 3},
+            {name: "公共事业", value: 3},
+            {name: "中心", value: 3},
+            {name: "技能", value: 3},
+            {name: "非线性", value: 3},
+            {name: "计算机辅助", value: 3},
+            {name: "网页", value: 3},
+            {name: "模式识别", value: 3},
+            {name: "环境", value: 3},
+            {name: "三维动画", value: 3},
+            {name: "阅读", value: 3},
+            {name: "传感器", value: 3},
+            {name: "绘图", value: 3},
+            {name: "量子力学", value: 3},
+            {name: "Chinese", value: 3},
+            {name: "互动", value: 3},
+            {name: "电子信息", value: 3},
+            {name: "光通信", value: 3},
+            {name: "传统", value: 3},
+            {name: "跨文化", value: 3},
+            {name: "数学模型", value: 3},
+            {name: "能力", value: 3},
+            {name: "会计学", value: 3},
+            {name: "天线", value: 3},
+            {name: "网络综合", value: 3},
+            {name: "总论", value: 3},
+            {name: "网络分析", value: 3},
+            {name: "IT", value: 3},
+            {name: "乐理", value: 3},
+            {name: "认知科学", value: 3},
+            {name: "质量", value: 3},
+            {name: "化学", value: 3},
+            {name: "咨询", value: 3},
+            {name: "优化", value: 3},
+            {name: "Personal", value: 3},
+            {name: "入门", value: 3},
+            {name: "微", value: 3},
+            {name: "运筹学", value: 3},
+            {name: "礼仪", value: 3},
+            {name: "保护", value: 3},
+            {name: "网络工程", value: 3},
+            {name: "College", value: 3},
+            {name: "虚拟现实", value: 3},
+            {name: "手机操作系统", value: 3},
+            {name: "人际沟通", value: 3},
+            {name: "平面", value: 3},
+            {name: "文选", value: 3},
+            {name: "贸易", value: 3},
+            {name: "研讨", value: 3},
+            {name: "传输技术", value: 3},
+            {name: "数字音频", value: 3},
+            {name: "机电", value: 3},
+            {name: "电子商务系统", value: 2},
+            {name: "科学计算", value: 2},
+            {name: "商法", value: 2},
+            {name: "下一代", value: 2},
+            {name: "大型", value: 2},
+            {name: "画面", value: 2},
+            {name: "政治", value: 2},
+            {name: "类", value: 2},
+            {name: "英美", value: 2},
+            {name: "宽带接入", value: 2},
+            {name: "政治学", value: 2},
+            {name: "精密机械", value: 2},
+            {name: "文学名著", value: 2},
+            {name: "地理", value: 2},
+            {name: "当代", value: 2},
+            {name: "平面设计", value: 2},
+            {name: "射频", value: 2},
+            {name: "创作实践", value: 2},
+            {name: "函数", value: 2},
+            {name: "信息化", value: 2},
+            {name: "监控", value: 2},
+            {name: "嵌入式操作系统", value: 2},
+            {name: "相关", value: 2},
+            {name: "写生", value: 2},
+            {name: "纳米", value: 2},
+            {name: "汽车", value: 2},
+            {name: "Computer", value: 2},
+            {name: "Web", value: 2},
+            {name: "Develoment", value: 2},
+            {name: "CAD", value: 2},
+            {name: "自然语言", value: 2},
+            {name: "3D", value: 2},
+            {name: "MATLAB", value: 2},
+            {name: "编译", value: 2},
+            {name: "概况", value: 2},
+            {name: "Linux", value: 2},
+            {name: "互连网安全", value: 2},
+            {name: "读", value: 2},
+            {name: "电动力学", value: 2},
+            {name: "美国", value: 2},
+            {name: "供应链", value: 2},
+            {name: "广播", value: 2},
+            {name: "网", value: 2},
+            {name: "电信法", value: 2},
+            {name: "”", value: 2},
+            {name: "Plan", value: 2},
+            {name: "装备", value: 2},
+            {name: "场景", value: 2},
+            {name: "培养", value: 2},
+            {name: "信息管理", value: 2},
+            {name: "Digital", value: 2},
+            {name: "脑", value: 2},
+            {name: "纳米材料", value: 2},
+            {name: "开发技术", value: 2},
+            {name: "思想", value: 2},
+            {name: "XML", value: 2},
+            {name: "信息工程", value: 2},
+            {name: "图形学", value: 2},
+            {name: "商业", value: 2},
+            {name: "史", value: 2},
+            {name: "连接", value: 2},
+            {name: "课", value: 2},
+            {name: "美术史", value: 2},
+            {name: "平台", value: 2},
+            {name: "版权", value: 2},
+            {name: "软件设计", value: 2},
+            {name: "职业生涯", value: 2},
+            {name: "微处理器", value: 2},
+            {name: "思维", value: 2},
+            {name: "交互", value: 2},
+            {name: "光纤通信", value: 2},
+            {name: "交际", value: 2},
+            {name: "量子", value: 2},
+            {name: "电磁学", value: 2},
+            {name: "Engineering", value: 2},
+            {name: "就业指导", value: 2},
+            {name: "产品开发", value: 2},
+            {name: "网络营销", value: 2},
+            {name: "证券", value: 2},
+            {name: "Physics", value: 2},
+            {name: "量化", value: 2},
+            {name: "", value: 2},
+            {name: "编程技术", value: 2},
+            {name: "D", value: 2},
+            {name: "美术", value: 2},
+            {name: "语言学", value: 2},
+            {name: "EDA", value: 2},
+            {name: "“", value: 2},
+            {name: "沙盘", value: 2},
+            {name: "建设", value: 2},
+            {name: "时", value: 2},
+            {name: "概率论", value: 2},
+            {name: "5G", value: 2},
+            {name: "生物", value: 2},
+            {name: "在", value: 2},
+            {name: "激光", value: 2},
+            {name: "热学", value: 2},
+            {name: "采集", value: 2},
+            {name: "导读", value: 2},
+            {name: "物流配送", value: 2},
+            {name: "传播", value: 2},
+            {name: "系统结构", value: 2},
+            {name: "学术交流", value: 2},
+            {name: "成本", value: 2},
+            {name: "诗歌", value: 2},
+            {name: "经济法", value: 2},
+            {name: "通信工程", value: 2},
+            {name: "机械制造", value: 2},
+            {name: "艺术史", value: 2},
+            {name: "经典作品", value: 2},
+            {name: "法制史", value: 2},
+            {name: "研究", value: 2},
+            {name: "行为学", value: 2},
+            {name: "资源", value: 2},
+            {name: "图形", value: 2},
+            {name: "模型", value: 2},
+            {name: "电力", value: 2},
+            {name: "隐私", value: 2},
+            {name: "LABVIEW", value: 2},
+            {name: "专项", value: 2},
+            {name: "创作", value: 2},
+            {name: "英文", value: 2},
+            {name: "资本", value: 2},
+            {name: "网络流量", value: 2},
+            {name: "舞蹈", value: 2},
+            {name: "电", value: 2},
+            {name: "金融学", value: 2},
+            {name: "词汇学", value: 2},
+            {name: "日文", value: 2},
+            {name: "税务", value: 2},
+            {name: "刑法", value: 2},
+            {name: "开源", value: 2},
+            {name: "控制系统", value: 2},
+            {name: "语法", value: 2},
+            {name: "专题研讨", value: 2},
+            {name: "风险管理", value: 2},
+            {name: "电磁波", value: 2},
+            {name: "比较", value: 2},
+            {name: "微分方程", value: 2},
+            {name: "Electronic", value: 2},
+            {name: "单片机", value: 2},
+            {name: "社会保障", value: 2},
+            {name: "工程力学", value: 2},
+            {name: "镜头", value: 2},
+            {name: "管理学", value: 2},
+            {name: "DSP", value: 2},
+            {name: "创意", value: 2},
+            {name: "Language", value: 2},
+            {name: "产业化", value: 2},
+            {name: "零售", value: 2},
+            {name: "技巧", value: 2},
+            {name: "声乐", value: 2},
+            {name: "调研", value: 2},
+            {name: "C#", value: 2},
+            {name: "敏捷", value: 2},
+            {name: "文秘", value: 2},
+            {name: "多媒体系统", value: 2},
+            {name: "动画片", value: 2},
+            {name: "配乐", value: 2},
+            {name: "传媒", value: 2},
+            {name: "造型艺术", value: 2},
+            {name: "会计报表", value: 2},
+            {name: "基础科学", value: 2},
+            {name: "Computting", value: 2},
+            {name: "行政法", value: 2},
+            {name: "环境保护", value: 2},
+            {name: "融资", value: 2},
+            {name: "媒介", value: 2},
+            {name: "4", value: 2},
+            {name: "点集", value: 2},
+            {name: "矢量", value: 2},
+            {name: "面对", value: 2},
+            {name: "采购", value: 2},
+            {name: "解", value: 2},
+            {name: "名曲", value: 2},
+            {name: "Flash", value: 2},
+            {name: "网络应用", value: 1},
+            {name: "教育", value: 1},
+            {name: "形象设计", value: 1},
+            {name: "废弃物", value: 1},
+            {name: "证据法", value: 1},
+            {name: "音频", value: 1},
+            {name: "现场", value: 1},
+            {name: "古建筑", value: 1},
+            {name: "VI", value: 1},
+            {name: "Analysis", value: 1},
+            {name: "社区", value: 1},
+            {name: "职业", value: 1},
+            {name: "实变", value: 1},
+            {name: "导演", value: 1},
+            {name: "数字影像", value: 1},
+            {name: "Circuit", value: 1},
+            {name: "结算", value: 1},
+            {name: "债权", value: 1},
+            {name: "广告设计", value: 1},
+            {name: "形体", value: 1},
+            {name: "诉讼法", value: 1},
+            {name: "计算方法", value: 1},
+            {name: "专业英语", value: 1},
+            {name: "商务礼仪", value: 1},
+            {name: "筹划", value: 1},
+            {name: "会计师", value: 1},
+            {name: "数据服务", value: 1},
+            {name: "数理", value: 1},
+            {name: "利用", value: 1},
+            {name: "Processing", value: 1},
+            {name: "渲染", value: 1},
+            {name: "国际会计", value: 1},
+            {name: "模式", value: 1},
+            {name: "Engineers", value: 1},
+            {name: "最优化", value: 1},
+            {name: "回归", value: 1},
+            {name: "艺术欣赏", value: 1},
+            {name: "计算机系统", value: 1},
+            {name: "识别", value: 1},
+            {name: "中间件", value: 1},
+            {name: "情报", value: 1},
+            {name: "控制工程", value: 1},
+            {name: "文书", value: 1},
+            {name: "自动机", value: 1},
+            {name: "编辑", value: 1},
+            {name: "训练", value: 1},
+            {name: "技术创新", value: 1},
+            {name: "有限元", value: 1},
+            {name: "计量经济学", value: 1},
+            {name: "成本会计", value: 1},
+            {name: "罗马", value: 1},
+            {name: "工具", value: 1},
+            {name: "人力资源", value: 1},
+            {name: "客户关系", value: 1},
+            {name: "SE", value: 1},
+            {name: "UML", value: 1},
+            {name: "名篇", value: 1},
+            {name: "图论", value: 1},
+            {name: "细胞", value: 1},
+            {name: "模式分析", value: 1},
+            {name: "Programming", value: 1},
+            {name: "医疗", value: 1},
+            {name: "协议", value: 1},
+            {name: "人力", value: 1},
+            {name: "生活", value: 1},
+            {name: "跨国", value: 1},
+            {name: "经济学说", value: 1},
+            {name: "数字图像处理", value: 1},
+            {name: "信道编码", value: 1},
+            {name: "首饰", value: 1},
+            {name: "Signal", value: 1},
+            {name: "操作", value: 1},
+            {name: "仲裁法", value: 1},
+            {name: "场论", value: 1},
+            {name: "信号处理器", value: 1},
+            {name: "读写", value: 1},
+            {name: "社会主义", value: 1},
+            {name: "Algorithms", value: 1},
+            {name: "离散", value: 1},
+            {name: "保障法", value: 1},
+            {name: "习得", value: 1},
+            {name: "并行计算", value: 1},
+            {name: "时间", value: 1},
+            {name: "网络空间", value: 1},
+            {name: "后期", value: 1},
+            {name: "理科", value: 1},
+            {name: "朗读", value: 1},
+            {name: "Circuits", value: 1},
+            {name: "进度", value: 1},
+            {name: "计算机软件", value: 1}
+        );
+        option.series[0].data = JosnList;
+        myChart.setOption(option);
+    }
+    load_BUPTword();
+
+
+    function load_CAUword() {
+        var myChart = echarts.init(document.getElementById('CAU_word'));
+        var option = {
+            title: {
+                //text: '农大课程关键词',
+                x: 'center',
+                textStyle: {
+                    fontSize: 23
+                }
+
+            },
+            //backgroundColor: '#F7F7F7',
+            tooltip: {
+                show: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {
+                        iconStyle: {
+                            normal: {
+                                color: '#FFFFFF'
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: '热点分析',
+                type: 'wordCloud',
+                //size: ['9%', '99%'],
+                sizeRange: [6, 66],
+                //textRotation: [0, 45, 90, -45],
+                rotationRange: [-45, 90],
+                //shape: 'circle',
+                textPadding: 0,
+                autoSize: {
+                    enable: true,
+                    minSize: 6
+                },
+                textStyle: {
+                    normal: {
+                        color: function () {
+                            return 'rgb(' + [
+                                    Math.round(Math.random() * 160),
+                                    Math.round(Math.random() * 160),
+                                    Math.round(Math.random() * 160)
+                                ].join(',') + ')';
+                        }
+                    },
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowColor: '#333'
+                    }
+                },
+                data: [{
+                    name: "Jayfee",
+                    value: 666
+                }, {
+                    name: "Nancy",
+                    value: 520
+                }]
+            }]
+        };
+
+        var JosnList = [];
+
+        JosnList.push(
+            {name: "食品", value: 24},
+            {name: "兽医", value: 23},
+            {name: "植物", value: 18},
+            {name: "农业", value: 18},
+            {name: "动物", value: 16},
+            {name: "环境", value: 14},
+            {name: "生物", value: 14},
+            {name: "专业英语", value: 14},
+            {name: "化学", value: 13},
+            {name: "工艺学", value: 13},
+            {name: "生物学", value: 12},
+            {name: "生态学", value: 12},
+            {name: "生态", value: 12},
+            {name: "演奏", value: 11},
+            {name: "葡萄酒", value: 10},
+            {name: "营养学", value: 10},
+            {name: "种子", value: 10},
+            {name: "土壤", value: 9},
+            {name: "艺术", value: 9},
+            {name: "资源", value: 9},
+            {name: "经济学", value: 9},
+            {name: "经济", value: 8},
+            {name: "生理学", value: 8},
+            {name: "土壤学", value: 8},
+            {name: "营养", value: 8},
+            {name: "机械", value: 8},
+            {name: "单片机", value: 8},
+            {name: "栽培", value: 8},
+            {name: "管理学", value: 8},
+            {name: "中国", value: 7},
+            {name: "程序设计", value: 7},
+            {name: "生产", value: 7},
+            {name: "分子", value: 7},
+            {name: "文化", value: 7},
+            {name: "舞蹈", value: 7},
+            {name: "专题", value: 7},
+            {name: "合唱", value: 7},
+            {name: "土地", value: 7},
+            {name: "加工", value: 7},
+            {name: "理论", value: 7},
+            {name: "育种", value: 6},
+            {name: "企业", value: 6},
+            {name: "管乐", value: 6},
+            {name: "表演", value: 6},
+            {name: "植保", value: 6},
+            {name: "评价", value: 6},
+            {name: "导论", value: 6},
+            {name: "大学生", value: 6},
+            {name: "果蔬", value: 6},
+            {name: "病理", value: 6},
+            {name: "投资", value: 6},
+            {name: "弦乐", value: 6},
+            {name: "普通", value: 5},
+            {name: "昆虫", value: 5},
+            {name: "计算机", value: 5},
+            {name: "病理学", value: 5},
+            {name: "育种学", value: 5},
+            {name: "专业", value: 5},
+            {name: "统计", value: 5},
+            {name: "结构", value: 5},
+            {name: "工程学", value: 5},
+            {name: "园艺学", value: 5},
+            {name: "评估", value: 5},
+            {name: "课程设计", value: 5},
+            {name: "数据库", value: 5},
+            {name: "实务", value: 5},
+            {name: "农学", value: 5},
+            {name: "经营", value: 5},
+            {name: "遥感", value: 5},
+            {name: "现代", value: 5},
+            {name: "安全", value: 5},
+            {name: "的", value: 5},
+            {name: "发展", value: 5},
+            {name: "规划", value: 5},
+            {name: "卫生学", value: 5},
+            {name: "发酵", value: 5},
+            {name: "方法", value: 5},
+            {name: "新闻", value: 4},
+            {name: "西方", value: 4},
+            {name: "摄影", value: 4},
+            {name: "世界", value: 4},
+            {name: "民乐", value: 4},
+            {name: "仪器", value: 4},
+            {name: "生物进化", value: 4},
+            {name: "项目", value: 4},
+            {name: "食品安全", value: 4},
+            {name: "分子生物学", value: 4},
+            {name: "高等", value: 4},
+            {name: "结构力学", value: 4},
+            {name: "处理", value: 4},
+            {name: "健康", value: 4},
+            {name: "微生物", value: 4},
+            {name: "园艺", value: 4},
+            {name: "分类学", value: 4},
+            {name: "戏剧", value: 4},
+            {name: "遗传学", value: 4},
+            {name: "微生物学", value: 4},
+            {name: "葡萄", value: 4},
+            {name: "饲料", value: 4},
+            {name: "作物", value: 4},
+            {name: "科学", value: 4},
+            {name: "土力学", value: 4},
+            {name: "通信", value: 4},
+            {name: "音乐", value: 4},
+            {name: "(", value: 4},
+            {name: "创新", value: 4},
+            {name: "流体", value: 4},
+            {name: "C", value: 3},
+            {name: "空间", value: 3},
+            {name: "上", value: 3},
+            {name: "电磁场", value: 3},
+            {name: "汽车", value: 3},
+            {name: "基因工程", value: 3},
+            {name: "食用菌", value: 3},
+            {name: "免疫学", value: 3},
+            {name: "地理", value: 3},
+            {name: "欣赏", value: 3},
+            {name: "开发", value: 3},
+            {name: "实践", value: 3},
+            {name: "写作", value: 3},
+            {name: "机械设计", value: 3},
+            {name: "武术", value: 3},
+            {name: "排球", value: 3},
+            {name: "下", value: 3},
+            {name: "市场", value: 3},
+            {name: "软件工程", value: 3},
+            {name: "日语", value: 3},
+            {name: "接口技术", value: 3},
+            {name: "调查", value: 3},
+            {name: "贮藏", value: 3},
+            {name: "技巧", value: 3},
+            {name: "、", value: 3},
+            {name: "信息系统", value: 3},
+            {name: "饮食", value: 3},
+            {name: "微机", value: 3},
+            {name: "产业", value: 3},
+            {name: "英语", value: 3},
+            {name: "设施", value: 3},
+            {name: "公共", value: 3},
+            {name: "转基因", value: 3},
+            {name: "试验", value: 3},
+            {name: "农药", value: 3},
+            {name: "二外", value: 3},
+            {name: "信息技术", value: 3},
+            {name: "传播", value: 3},
+            {name: "简史", value: 3},
+            {name: "昆虫学", value: 3},
+            {name: "细胞", value: 3},
+            {name: "乳品", value: 3},
+            {name: "训练", value: 3},
+            {name: "证券", value: 3},
+            {name: "景观", value: 3},
+            {name: "公共关系", value: 3},
+            {name: "创作", value: 3},
+            {name: "外科学", value: 3},
+            {name: "化学工程", value: 2},
+            {name: "史", value: 2},
+            {name: "水文学", value: 2},
+            {name: "功能", value: 2},
+            {name: "三维", value: 2},
+            {name: "保鲜", value: 2},
+            {name: "案例", value: 2},
+            {name: "构造", value: 2},
+            {name: "多媒体技术", value: 2},
+            {name: "数字", value: 2},
+            {name: "政策", value: 2},
+            {name: "体育", value: 2},
+            {name: "真菌", value: 2},
+            {name: "灌排", value: 2},
+            {name: "蛋白质", value: 2},
+            {name: "草坪", value: 2},
+            {name: "国际", value: 2},
+            {name: "畜禽", value: 2},
+            {name: "机械化", value: 2},
+            {name: "会计学", value: 2},
+            {name: "有机化学", value: 2},
+            {name: "病原学", value: 2},
+            {name: "进化", value: 2},
+            {name: "Java", value: 2},
+            {name: "水利工程", value: 2},
+            {name: "商业银行", value: 2},
+            {name: "算法", value: 2},
+            {name: "工厂", value: 2},
+            {name: "电磁波", value: 2},
+            {name: "中外", value: 2},
+            {name: "动物学", value: 2},
+            {name: "饲养", value: 2},
+            {name: "诊断学", value: 2},
+            {name: "杂草", value: 2},
+            {name: "临床", value: 2},
+            {name: "质量", value: 2},
+            {name: "外科手术", value: 2},
+            {name: "无机化学", value: 2},
+            {name: "繁殖", value: 2},
+            {name: "寄生虫", value: 2},
+            {name: "果树", value: 2},
+            {name: "水利学", value: 2},
+            {name: "保险学", value: 2},
+            {name: "流体力学", value: 2},
+            {name: "传染病", value: 2},
+            {name: "发动机", value: 2},
+            {name: "排水", value: 2},
+            {name: "技能", value: 2},
+            {name: "足球", value: 2},
+            {name: "学各论", value: 2},
+            {name: "园艺产品", value: 2},
+            {name: "有限元", value: 2},
+            {name: "泵站", value: 2},
+            {name: "原核", value: 2},
+            {name: "形体", value: 2},
+            {name: "贸易", value: 2},
+            {name: ")", value: 2},
+            {name: "毒理学", value: 2},
+            {name: "农产品", value: 2},
+            {name: "酿酒", value: 2},
+            {name: "生物化学", value: 2},
+            {name: "生物防治", value: 2},
+            {name: "论文", value: 2},
+            {name: "创业", value: 2},
+            {name: "财务", value: 2},
+            {name: "建筑物", value: 2},
+            {name: "科学实验", value: 2},
+            {name: "初级", value: 2},
+            {name: "乒乓球", value: 2},
+            {name: "心理学", value: 2},
+            {name: "经济法", value: 2},
+            {name: "感官", value: 2},
+            {name: "地基基础", value: 2},
+            {name: "家畜", value: 2},
+            {name: "水利", value: 2},
+            {name: "检测", value: 2},
+            {name: "中兽医", value: 2},
+            {name: "草地", value: 2},
+            {name: "测试", value: 2},
+            {name: "作物栽培", value: 2},
+            {name: "数学", value: 2},
+            {name: "城市", value: 2},
+            {name: "针灸", value: 2},
+            {name: "农村", value: 2},
+            {name: "知识产权", value: 2},
+            {name: "进展", value: 2},
+            {name: "耕作", value: 2},
+            {name: "工艺", value: 2},
+            {name: "比较", value: 2},
+            {name: "电子", value: 2},
+            {name: "电子电路", value: 2},
+            {name: "法律", value: 2},
+            {name: "田间", value: 2},
+            {name: "保护", value: 2},
+            {name: "电机学", value: 2},
+            {name: "软件", value: 2},
+            {name: "市场营销", value: 2},
+            {name: "战略", value: 2},
+            {name: "资产", value: 2},
+            {name: "植物病害", value: 2},
+            {name: "散手", value: 2},
+            {name: "影视", value: 2},
+            {name: "数字影像", value: 2},
+            {name: "网球", value: 2},
+            {name: "财政学", value: 2},
+            {name: "健美操", value: 2},
+            {name: "制度", value: 2},
+            {name: "药理学", value: 2},
+            {name: "机械制造", value: 2},
+            {name: "鉴别", value: 2},
+            {name: "研究", value: 2},
+            {name: "图形学", value: 2},
+            {name: "合成", value: 2},
+            {name: "兽医学", value: 2},
+            {name: "灌溉", value: 2},
+            {name: "项目管理", value: 2},
+            {name: "大学", value: 2},
+            {name: "科技", value: 2},
+            {name: "传统", value: 2},
+            {name: "期货", value: 2},
+            {name: "解剖学", value: 2},
+            {name: "成形", value: 2},
+            {name: "高频", value: 2},
+            {name: "添加剂", value: 2},
+            {name: "法学", value: 2},
+            {name: "计算机网络", value: 2},
+            {name: "中", value: 2},
+            {name: "质量检验", value: 2},
+            {name: "羽毛球", value: 2},
+            {name: "综合", value: 2},
+            {name: "DV", value: 2},
+            {name: "持续", value: 2},
+            {name: "外国", value: 2},
+            {name: "产", value: 2},
+            {name: "鉴赏", value: 2},
+            {name: "城市规划", value: 1},
+            {name: "实验室", value: 1},
+            {name: "会计", value: 1},
+            {name: "最优化", value: 1},
+            {name: "讲座", value: 1},
+            {name: "推广", value: 1},
+            {name: "采后", value: 1},
+            {name: "电子媒体", value: 1},
+            {name: "高级", value: 1},
+            {name: "模糊数学", value: 1},
+            {name: "心理健康", value: 1},
+            {name: "抗病性", value: 1},
+            {name: "规划设计", value: 1},
+            {name: "焙烤", value: 1},
+            {name: "理财", value: 1},
+            {name: "交通安全", value: 1},
+            {name: "生涯规划", value: 1},
+            {name: "品鉴", value: 1},
+            {name: "表达", value: 1},
+            {name: "动力学", value: 1},
+            {name: "污染", value: 1},
+            {name: "国际金融", value: 1},
+            {name: "安全形势", value: 1},
+            {name: "识别", value: 1},
+            {name: "展望", value: 1},
+            {name: "信息学", value: 1},
+            {name: "求职", value: 1},
+            {name: "欧洲", value: 1},
+            {name: "水资源", value: 1},
+            {name: "能源", value: 1},
+            {name: "克隆", value: 1},
+            {name: "维生素", value: 1},
+            {name: "热能", value: 1},
+            {name: "畜牧场", value: 1},
+            {name: "社会保障", value: 1},
+            {name: "艺术设计", value: 1},
+            {name: "房地产", value: 1},
+            {name: "之道", value: 1},
+            {name: "美容", value: 1},
+            {name: "物料", value: 1},
+            {name: "沙盘", value: 1},
+            {name: "起源", value: 1},
+            {name: "医学", value: 1},
+            {name: "测量", value: 1},
+            {name: "赏析", value: 1},
+            {name: "资源管理", value: 1},
+            {name: "I", value: 1},
+            {name: "作品", value: 1},
+            {name: "制作", value: 1},
+            {name: "花卉", value: 1},
+            {name: "橄榄球", value: 1},
+            {name: "实验设计", value: 1},
+            {name: "食疗", value: 1},
+            {name: "利用", value: 1},
+            {name: "配合", value: 1},
+            {name: "实用", value: 1},
+            {name: "公司法", value: 1},
+            {name: "地籍", value: 1},
+            {name: "解析", value: 1},
+            {name: "统计学", value: 1},
+            {name: "水力", value: 1},
+            {name: "产品", value: 1},
+            {name: "药物", value: 1},
+            {name: "责任法", value: 1},
+            {name: "演化", value: 1},
+            {name: "商务谈判", value: 1},
+            {name: "国际法", value: 1}
+        );
+
+        option.series[0].data = JosnList;
+        myChart.setOption(option);
+    }
+    load_CAUword();
+
+    function load_playphone() {
+        var myChart = echarts.init(document.getElementById('play_phone'));
+        var option = {
+            title: {
+                //text: '食品生产情况',
+                //subtext: '每年企业新办/注销许可证趋势'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            grid: {
+                left: '3%',
+                top: '15%',
+                containLabel: true
+            },
+            legend: {
+                data: ['工程数学', '通信原理', '计通网', '情景英语', '毛概']
+            },
+            calculable: true,
+            xAxis: [
+                {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: [-10, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110],
+                    name: '上课时间'
+                },
+
+            ],
+            yAxis: {
+                type: 'value',
+                name: '人数',
+            }
+            ,
+            series: [
+                {
+                    name: '工程数学',
+                    type: 'line',
+                    smooth: false,
+                    data: [51, 37, 29, 17, 11, 10, 17, 9, 12, 3, 6, 6, 21]
+                },
+                {
+                    name: '通信原理',
+                    type: 'line',
+                    smooth: false,
+                    data: [41, 34, 16, 23, 13, 12, 13, 15, 10, 20, 15, 15, 112]
+                },
+                {
+                    name: '计通网',
+                    type: 'line',
+                    smooth: false,
+                    data: [32, 27, 17, 12, 11, 10, 21, 11, 13, 21, 23, 20, 3]
+                },
+                {
+                    name: '情景英语',
+                    type: 'line',
+                    smooth: false,
+                    data: [15, 13, 4, 26, 8, 8, 3, 7, 9, 21, 4, 3, 8]
+                },
+                {
+                    name: '毛概',
+                    type: 'line',
+                    smooth: false,
+                    data: [50, 152, 56, 28, 30, 11, 10, 29, 22, 21, 5, 6, 2]
+                }
+            ]
+        };
+        myChart.setOption(option);
+    }
+    load_playphone();
+
+    function load_bath() {
+        var myChart = echarts.init(document.getElementById('bath_time'));
+        var option = {
+            angleAxis: {},
+            radiusAxis: {
+                type: 'category',
+                data: ['男生', '女生'],
+                z: 10
+            },
+            polar: {center:['50%','55%']},
+            series: [{
+                type: 'bar',
+                data: [35.1291126, 10.76544315],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '[0,10)',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [32.7041552, 48.23187108],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '[10,20)',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [9.778476865, 22.35899731],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '[20,30)',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [6.567046795, 8.504923903],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '[30,40)',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [5.256259012, 4.498657117],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '[40,50)',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [3.827500328, 2.484333035],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '[50,60)',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [2.791977979, 1.589077887],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '[60,70)',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [2.071044698, 0.626678603],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '[70,80)',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [1.8744265, 0.9400179],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '[80,90)',
+                stack: 'a'
+            }
+
+            ],
+            legend: {
+                show: true,
+                data: ['[0,10)', '[10,20)', '[20,30)', '[30,40)', '[40,50)', '[50,60)', '[60, 70)', '[70,80)', '[80,90)'
+                ]
+            }
+        };
+
+        myChart.setOption(option);
+    }
+    load_bath();
+
+    function load_shopandbath() {
+        var myChart = echarts.init(document.getElementById('shop_bath'));
+        var option = {
+            title: {
+                //text: ' ',
+                //subtext: ' '
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            grid: {
+                left: '3%',
+                top: '15%',
+                containLabel: true
+            },
+            legend: {
+                data: ['购物', '洗浴']
+            },
+            calculable: true,
+            xAxis: [
+                {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: ['6:00', '7:00', '8:00', '9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00', '23:00'],
+                    //name:'时间'
+                },
+
+            ],
+            yAxis: {
+                type: 'value',
+                name: '人数'
+            }
+            ,
+            series: [
+                {
+                    name: '购物',
+                    type: 'line',
+                    smooth: false,
+                    data: [251, 20828, 22397, 23766, 17642, 29804, 61939, 34225, 23508, 33590, 23645, 64170, 71956, 50049, 55154, 73026, 75287, 1756],
+                    color: '#D9534F'
+                },
+                {
+                    name: '洗浴',
+                    type: 'line',
+                    smooth: false,
+                    data: [1928, 5055, 5252, 7189, 6976, 8666, 15998, 17391, 16672, 21028, 30668, 44387, 70956, 85862, 122144, 188633, 223655, 76476],
+                    color: '#61A0A8'
+                }
+            ]
+        };
+        myChart.setOption(option);
+    }
+    load_shopandbath();
+
+    function load_english() {
+        var myChart = echarts.init(document.getElementById('env_english'));
+        option = {
+            xAxis: {
+                type: 'category',
+                data: ['week 1', 'week 2', 'week 3', 'week 4', 'week 5', 'week 6', 'week 7', 'week 8', 'week 9', 'week 10', 'week 11', 'week 12', 'week 13', 'week 14'],
+                // axisLabel:{
+                // 	interval:0
+                // },
+                name: '周数'
+            },
+            yAxis: {
+                type: 'value',
+                name: '人数',
+            },
+            series: [{
+                data: [24, 7, 5, 3, 2, 2, 3, 5, 26, 3, 2, 2, 6, 2],
+                type: 'bar',
+                color: '#61A0A8'
+            }]
+        };
+        myChart.setOption(option);
+    }
+    load_english();
+
+    function load_getup_time_BUPT_weekday() {
+        var myChart = echarts.init(document.getElementById('BUPT_getup_weekday'));
+        var option = {
+            legend: {},
+            tooltip: {},
+            dataset: {
+                source: [
+                    ['time', '6:00-7:00', '7:00-8:00', '8:00-9:00', '9:00-10:00'],
+                    ['week1', 0.162546542, 0.557590185, 0.141060856, 0.138771898],
+                    ['week2', 0.066199036, 0.311413123, 0.390179746, 0.231915826],
+                    ['week3', 0.061162711, 0.631888545, 0.157963536, 0.148882009],
+                    ['week4', 0.048305144, 0.640425976, 0.161167954, 0.149961718],
+                    ['week5', 0.039724138, 0.630241379, 0.162724138, 0.167137931],
+                    ['week6', 0.039219935, 0.633188877, 0.163199711, 0.164174792],
+                    ['week7', 0.029240425, 0.619273124, 0.177359342, 0.173864021],
+                    ['week8', 0.02717989, 0.596307934, 0.191516104, 0.184681854],
+                    ['week9', 0.026035068, 0.567090367, 0.20231332, 0.204193403],
+                    ['week10', 0.024669199, 0.56317569, 0.209208165, 0.202529532],
+                    ['week11', 0.024504382, 0.553092827, 0.215136561, 0.206798264],
+                    ['week12', 0.024692451, 0.545844765, 0.212496681, 0.216435083],
+                    ['week13', 0.023510115, 0.521140878, 0.236650264, 0.218106433],
+                    ['week14', 0.026328568, 0.531211222, 0.20652819, 0.235176693],
+                    ['week15', 0.023846392, 0.495385568, 0.232703623, 0.248064416],
+                    ['week16', 0.021461284, 0.440781766, 0.286345724, 0.251411226],
+                ]
+            },
+            xAxis: {type: 'category'},
+            yAxis: {},
+            series: [
+                {type: 'bar'},
+                {type: 'bar'},
+                {type: 'bar'},
+                {type: 'bar'}
+            ]
+        };
+        myChart.setOption(option);
+    }
+    load_getup_time_BUPT_weekday();
+
+    function load_getup_time_BUPT_weekend() {
+        var myChart = echarts.init(document.getElementById('BUPT_getup_weekend'));
+        var option = {
+            legend: {},
+            tooltip: {},
+            dataset: {
+                source: [
+                    ['time', '6:00-7:00', '7:00-8:00', '8:00-9:00', '9:00-10:00'],
+                    ['week1', 0.080044346, 0.309312639, 0.39113082, 0.219512195],
+                    ['week2', 0.050119332, 0.274463007, 0.431682578, 0.243735084],
+                    ['week3', 0.03166175, 0.21179941, 0.445427729, 0.311111111],
+                    ['week4', 0.022447102, 0.218767249, 0.410671573, 0.348114075],
+                    ['week5', 0.074789916, 0.333277311, 0.353277311, 0.238655462],
+                    ['week6', 0.028054633, 0.271317829, 0.440568475, 0.260059062],
+                    ['week7', 0.02481556, 0.242342947, 0.406885759, 0.325955734],
+                    ['week8', 0.020162933, 0.211812627, 0.467209776, 0.300814664],
+                    ['week9', 0.021247827, 0.267336295, 0.404288198, 0.30712768],
+                    ['week10', 0.025599129, 0.379811184, 0.375998548, 0.21859114],
+                    ['week11', 0.035677459, 0.22870695, 0.457207672, 0.278407919],
+                    ['week12', 0.019964065, 0.222798962, 0.498901976, 0.258334997],
+                    ['week13', 0.029030817, 0.419606967, 0.28561858, 0.265743636],
+                    ['week14', 0.02068162, 0.169531022, 0.402272065, 0.407515293],
+                    ['week15', 0.024187811, 0.205833531, 0.406687218, 0.363291439],
+                    ['week16', 0.016666667, 0.209401709, 0.417094017, 0.356837607]
+                ]
+            },
+            xAxis: {type: 'category'},
+            yAxis: {},
+            series: [
+                {type: 'bar'},
+                {type: 'bar'},
+                {type: 'bar'},
+                {type: 'bar'}
+            ]
+        };
+        myChart.setOption(option);
+    }
+    load_getup_time_BUPT_weekend();
+
+    function load_getup_time_BNU_weekday() {
+        var myChart = echarts.init(document.getElementById('BNU_getup_weekday'));
+        var option = {
+            legend: {},
+            tooltip: {},
+            dataset: {
+                source: [
+                    ['time', '6:00-7:00', '7:00-8:00', '8:00-9:00', '9:00-10:00'],
+                    ['week1', 0.083716519, 0.497356018, 0.261179446, 0.157748017],
+                    ['week2', 0.078906295, 0.277935141, 0.376206717, 0.266951847],
+                    ['week3', 0.078518199, 0.503798106, 0.258775246, 0.158908449],
+                    ['week4', 0.076788711, 0.491540227, 0.273041751, 0.158629311],
+                    ['week5', 0.097345733, 0.47907474, 0.26858326, 0.154996266],
+                    ['week6', 0.098331855, 0.47511428, 0.267790134, 0.158763731],
+                    ['week7', 0.088111696, 0.46666438, 0.280492616, 0.164731308],
+                    ['week8', 0.078015164, 0.457555398, 0.286326189, 0.178103249],
+                    ['week9', 0.075370212, 0.467142278, 0.290048161, 0.167439348],
+                    ['week10', 0.064415442, 0.448881993, 0.314319613, 0.172382952],
+                    ['week11', 0.057616126, 0.447478488, 0.314963241, 0.179942144],
+                    ['week12', 0.05609522, 0.443156076, 0.310673834, 0.19007487],
+                    ['week13', 0.052470281, 0.442620391, 0.318471959, 0.186437369],
+                    ['week14', 0.052294601, 0.44016688, 0.315440539, 0.19209798]
+                ]
+            },
+            xAxis: {type: 'category'},
+            yAxis: {},
+            series: [
+                {type: 'bar'},
+                {type: 'bar'},
+                {type: 'bar'},
+                {type: 'bar'}
+            ]
+        };
+        myChart.setOption(option);
+    }
+    load_getup_time_BNU_weekday();
+
+    function load_getup_time_BNU_weekend() {
+        var myChart = echarts.init(document.getElementById('BNU_getup_weekend'));
+        var option = {
+            legend: {},
+            tooltip: {},
+            dataset: {
+                source: [
+                    ['time', '6:00-7:00', '7:00-8:00', '8:00-9:00', '9:00-10:00'],
+                    ['week1', 0.080573194, 0.319032092, 0.369658486, 0.230736228],
+                    ['week2', 0.068030187, 0.26785519, 0.385650224, 0.278464399],
+                    ['week3', 0.064211944, 0.314644942, 0.38341138, 0.237731734],
+                    ['week4', 0.062112638, 0.305982215, 0.392481811, 0.239423336],
+                    ['week5', 0.068969996, 0.304974672, 0.399727237, 0.226328095],
+                    ['week6', 0.055372111, 0.317119634, 0.40989332, 0.217614935],
+                    ['week7', 0.055703662, 0.321593939, 0.360740845, 0.261961555],
+                    ['week8', 0.046475491, 0.304633423, 0.387978528, 0.260912558],
+                    ['week9', 0.051168621, 0.297721743, 0.404409054, 0.246700582],
+                    ['week10', 0.046074116, 0.292205026, 0.419991481, 0.241729377],
+                    ['week11', 0.04856981, 0.288303597, 0.414471821, 0.248654772],
+                    ['week12', 0.050867566, 0.281847842, 0.423995254, 0.243289337],
+                    ['week13', 0.066676689, 0.318349245, 0.387055551, 0.227918515],
+                    ['week14', 0.047976414, 0.251407129, 0.421513446, 0.279103011],
+                ]
+            },
+            xAxis: {type: 'category'},
+            yAxis: {},
+            series: [
+                {type: 'bar'},
+                {type: 'bar'},
+                {type: 'bar'},
+                {type: 'bar'}
+            ]
+        };
+        myChart.setOption(option);
+    }
+    load_getup_time_BNU_weekend();
+
+    function load_sleep_BUPT() {
+        var myChart = echarts.init(document.getElementById('BUPT_sleep'));
+        var option = {
+            angleAxis: {},
+            radiusAxis: {
+                type: 'category',
+                data: ['工作日', '休息日'],
+                z: 10
+            },
+            polar: {center:['50%','55%']},
+            series: [{
+                type: 'bar',
+                data: [0.944287337, 0.534956033],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '22:00-23:00',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [51.46568809, 35.3063552],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '23:00-0:00',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [30.77814608, 43.21664605],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '0:00-1:00',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [9.967751095, 12.79065016],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '1:00-2:00',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [4.28464222, 5.218421805],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '2:00-3:00',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [2.55948517, 2.93297075],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '>3:00',
+                stack: 'a'
+            }
+            ],
+            legend: {
+                show: true,
+                data: ['22:00-23:00', '23:00-0:00', '0:00-1:00', '1:00-2:00', '2:00-3:00', '>3:00']
+            }
+        };
+        myChart.setOption(option);
+    }
+    load_sleep_BUPT();
+
+    function load_sleep_CAU() {
+        var myChart = echarts.init(document.getElementById('CAU_sleep'));
+        var option = {
+            angleAxis: {},
+            radiusAxis: {
+                type: 'category',
+                data: ['工作日', '休息日'],
+                z: 10
+            },
+            polar: {center:['50%','55%']},
+            series: [{
+                type: 'bar',
+                data: [5.374532734, 3.277559242],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '22:00-23:00',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [19.10174139, 15.50272694],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '23:00-0:00',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [30.11557579, 30.65484674],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '0:00-1:00',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [24.06242274, 25.38291241],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '1:00-2:00',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [14.50066607, 16.43625411],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '2:00-3:00',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [6.84506127, 8.74570054],
+                center:['50%','55%'],
+                coordinateSystem: 'polar',
+                name: '>3:00',
+                stack: 'a'
+            }
+            ],
+            legend: {
+                show: true,
+                data: ['22:00-23:00', '23:00-0:00', '0:00-1:00', '1:00-2:00', '2:00-3:00', '>3:00']
+            }
+        };
+        myChart.setOption(option);
+    }
+    load_sleep_CAU();
+
+    function load_bath_month() {
+        var myChart = echarts.init(document.getElementById('bath_month'));
+        var option = {
+            xAxis: {
+                type: 'category',
+                data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                axisLabel: {
+                    interval: 0
+                }
+            },
+            yAxis: {
+                type: 'value',
+                name: '次数',
+            },
+            series: [{
+                data: [6.986068637, 2.189284924, 12.80799867, 12.02722477, 14.41170483, 14.63108454, 7.486457205, 4.902796496, 10.50437799, 11.01128537, 11.51301393, 11.13411326],
+                type: 'bar',
+                color: '#61A0A8'
+            }]
+        };
+        myChart.setOption(option);
+    }
+    load_bath_month();
+
+    //不同课程玩手机百分比图
+    $(function () {
+        // pie chart
+        $('#jitongwang').easyPieChart({
+            size: 110,
+            barColor: '#00FF7F',
+            trackColor: 'rgba(245, 245, 245, 0.8)',
+            scaleColor: false,
+            lineWidth: 5,
+            lineCap: "square",
+            animate: 800
+        });
+
+        // pie chart
+        $('#math').easyPieChart({
+            size: 110,
+            barColor: '#00CD66',
+            trackColor: 'rgba(245, 245, 245, 0.8)',
+            scaleColor: false,
+            lineWidth: 5,
+            lineCap: "square",
+            animate: 800
+        });
+
+        // pie chart
+        $('#tongyuan').easyPieChart({
+            size: 110,
+            barColor: '#008B45',
+            trackColor: 'rgba(245, 245, 245, 0.8)',
+            scaleColor: false,
+            lineWidth: 5,
+            lineCap: "square",
+            animate: 800
+        });
+
+        // pie chart
+        $('#english').easyPieChart({
+            size: 110,
+            barColor: '#458B00',
+            trackColor: 'rgba(245, 245, 245, 0.8)',
+            scaleColor: false,
+            lineWidth: 5,
+            lineCap: "square",
+            animate: 800
+        });
+
+        // pie chart
+        $('#maogai').easyPieChart({
+            size: 110,
+            barColor: '#006400',
+            trackColor: 'rgba(245, 245, 245, 0.8)',
+            scaleColor: false,
+            lineWidth: 5,
+            lineCap: "square",
+            animate: 800
+        });
+    });
+
+    function load_net_BUPT() {
+        var myChart = echarts.init(document.getElementById('BUPT_net'));
+        var xAxisData = ['0:00-1:00', '1:00-2:00', '2:00-3:00', '3:00-4:00', '4:00-5:00', '5:00-6:00', '6:00-7:00', '7:00-8:00', '8:00-9:00', '9:00-10:00', '10:00-11:00', '11:00-12:00', '12:00-13:00', '13:00-14:00', '14:00-15:00', '15:00-16:00', '16:00-17:00', '17:00-18:00', '18:00-19:00', '19:00-20:00', '20:00-21:00', '21:00-22:00', '22:00-23:00', '23:00-0:00'];
+        var data1 = [5275.888525,2837.960656,2048.418033,1709.032787,1506.296721,1385.816393,1472.52459,2444.25082,2994.198361,3599.732787,4375.355738,4969.804918,6431.427869,6499.454098,5392.24918,5891.452459,5862.35082,6625.442623,6902.091803,6873.644262,7320.657377,8083.02623,9427.267213,9352.470492];
+        var data2 = [6510.831967,3173.467213,2185.721311,1782.733607,1556.237705,1412.881148,1451.352459,1953.97541,2715.598361,3695.598361,4725,5607.086066,6294.17623,6418.397541,6252.262295,6199.877049,6336.290984,6678.717213,6737.729508,6919.356557,7338.581967,8030.606557,9278.643443,9237.331967];
+        var option = {
+            title: {
+                //text: ''
+            },
+            legend: {
+                data: ['工作日', '休息日'],
+                align: 'left'
+            },
+            toolbox: {
+                // y: 'bottom',
+                feature: {
+                    magicType: {
+                        type: ['stack', 'tiled']
+                    },
+                    dataView: {},
+                    saveAsImage: {
+                        pixelRatio: 2
+                    }
+                }
+            },
+            tooltip: {},
+            xAxis: {
+                data: xAxisData,
+                silent: false,
+                splitLine: {
+                    show: false
+                },
+                axisLabel: {
+                    interval: 2
+                }
+
+            },
+            yAxis: {},
+            series: [{
+                name: '工作日',
+                type: 'bar',
+                data: data1,
+                animationDelay: function (idx) {
+                    return idx * 10;
+                }
+            }, {
+                name: '休息日',
+                type: 'bar',
+                data: data2,
+                animationDelay: function (idx) {
+                    return idx * 10 + 100;
+                }
+            }],
+            animationEasing: 'elasticOut',
+            animationDelayUpdate: function (idx) {
+                return idx * 5;
+            }
+        };
+        myChart.setOption(option);
+    }
+    load_net_BUPT();
+
+    function load_net_CAU() {
+        var myChart = echarts.init(document.getElementById('CAU_net'));
+        var xAxisData = ['0:00-1:00', '1:00-2:00', '2:00-3:00', '3:00-4:00', '4:00-5:00', '5:00-6:00', '6:00-7:00', '7:00-8:00', '8:00-9:00', '9:00-10:00', '10:00-11:00', '11:00-12:00', '12:00-13:00', '13:00-14:00', '14:00-15:00', '15:00-16:00', '16:00-17:00', '17:00-18:00', '18:00-19:00', '19:00-20:00', '20:00-21:00', '21:00-22:00', '22:00-23:00', '23:00-0:00'];
+        var data1 = [6568.960656,4695.932787,3199.378689,2297.514754,1871.788525,1684.429508,1795.878689,2754.729508,4116.137705,5075.757377,5904.947541,6121.614754,6983.440984,6911.903279,6674.419672,6481.908197,6937.344262,7086.67377,7393.377049,7449.54918,7298.314754,7635.186885,8091.254098,7756.986885];
+        var data2 = [7141.434426,5290.278689,3757.479508,2764.942623,2236.815574,1979.020492,1974.516393,2475.991803,3551.983607,4719.233607,5597.905738,6149.672131,6790.545082,6849.442623,6708.381148,6681.786885,6851.709016,7056.659836,7367.012295,7362.077869,7427,7803.020492,8275.520492,8077.598361];
+        var option = {
+            title: {
+                //text: '农大'
+            },
+            legend: {
+                data: ['工作日', '休息日'],
+                align: 'left'
+            },
+            toolbox: {
+                // y: 'bottom',
+                feature: {
+                    magicType: {
+                        type: ['stack', 'tiled']
+                    },
+                    dataView: {},
+                    saveAsImage: {
+                        pixelRatio: 2
+                    }
+                }
+            },
+            tooltip: {},
+            xAxis: {
+                data: xAxisData,
+                silent: false,
+                splitLine: {
+                    show: false
+                },
+                axisLabel: {
+                    interval: 2
+                }
+
+            },
+            yAxis: {},
+            series: [{
+                name: '工作日',
+                type: 'bar',
+                data: data1,
+                animationDelay: function (idx) {
+                    return idx * 10;
+                }
+            }, {
+                name: '休息日',
+                type: 'bar',
+                data: data2,
+                animationDelay: function (idx) {
+                    return idx * 10 + 100;
+                }
+            }],
+            animationEasing: 'elasticOut',
+            animationDelayUpdate: function (idx) {
+                return idx * 5;
+            }
+        };
+        myChart.setOption(option);
+    }
+    load_net_CAU();
+
+
+</script>
+</body>
+
+</html>

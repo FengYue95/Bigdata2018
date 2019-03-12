@@ -1,0 +1,1430 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="/static/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-brands.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-brands.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-regular.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-regular.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-solid.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-solid.min.css">
+    <!--<link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome-all.min.css">-->
+
+    <link rel="stylesheet" href="/static/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="/static/vendor/chartist/css/chartist-custom.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="/static/css/demo.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/favicon.png">
+    <style type="text/css">
+        .blur {
+            -webkit-filter: blur(3px); /* Chrome, Opera */
+            -moz-filter: blur(3px);
+            -ms-filter: blur(3px);
+            filter: blur(3px);
+        }
+    </style>
+</head>
+
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="brand">
+            <a href="/index"><span style="font-size: 20px;"><i class="fas fa-graduation-cap"></i>&emsp;智慧校园云平台</span></a>
+        </div>
+        <div class="container-fluid">
+            <div class="navbar-btn">
+                <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
+            </div>
+            <div class="navbar-btn navbar-btn-right">
+                <a class="btn btn-success update-pro"
+                   href="/download" target="_self"
+                   title="Download PPT" target="_blank"><i class="fa fa-rocket"></i> <span> PPT 下载</span></a>
+            </div>
+
+            <div id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="/static/img/member.jpeg"
+                                                                                        class="img-circle" alt="Avatar">
+                            <span>Parsifal</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><img src="/static/img/member.jpeg"
+                                                 style="width: 20px;height: 20px;margin-right: 10px;" class="img-circle"
+                                                 alt="Avatar"><span>杜欣远</span></a>
+                            </li>
+                            <li><a href="#"><img src="/static/img/member.jpeg"
+                                                 style="width: 20px;height: 20px;margin-right: 10px;" class="img-circle"
+                                                 alt="Avatar"><span>冯玥</span></a>
+                            </li>
+                            <li><a href="#"><img src="/static/img/member.jpeg"
+                                                 style="width: 20px;height: 20px;margin-right: 10px;" class="img-circle"
+                                                 alt="Avatar"><span>李想</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- LEFT SIDEBAR -->
+    <div id="sidebar-nav" class="sidebar">
+        <div class="sidebar-scroll">
+            <nav>
+                <ul class="nav">
+                    <!--<li><a href="index.html" class="active"><i class="lnr lnr-home"></i> <span>Campus Overview</span></a></li>-->
+                    <li>
+                        <a href="#subPages1" data-toggle="collapse" class="collapsed"><i class="lnr lnr-home"></i>
+                            <span>校园概况</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="subPages1" class="collapse in">
+                            <ul class="nav">
+                                <li><a href="/index#本科生入学概况" class=""><i class="lnr lnr-chart-bars"></i>
+                                    <span>在校生人数</span></a></li>
+                                <li><a href="/index#院系分布" class=""><i class="lnr lnr-apartment"></i>
+                                    <span>院系分布</span></a>
+                                </li>
+                                <li><a href="/index#男女比例" class=""><i class="lnr lnr-heart"></i> <span>男女比例</span></a>
+                                </li>
+                                <li><a href="/index#生源地" class=""><i class="lnr lnr-earth"></i> <span>生源地</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#subPages2" data-toggle="collapse" class="collapsed"><i class="lnr lnr-chart-bars"></i>
+                            <span>校园生活</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="subPages2" class="collapse in">
+                            <ul class="nav">
+                                <li><a href="/life#课程统计" class=""><i class="lnr lnr-pencil"></i> <span>学习</span></a>
+                                </li>
+                                <li><a href="/life#作息" class=""><i class="lnr lnr-eye"></i> <span>作息</span></a></li>
+                                <li><a href="/life#消费" class=""><i class="lnr lnr-cart"></i> <span>消费</span></a></li>
+                                <li><a href="/life#上网" class=""><i class="lnr lnr-laptop-phone"></i>
+                                    <span>上网</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/social"><i class="lnr lnr-users"></i>
+                            <span>校园社交</span> </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--头部和底部导航栏截止位置-->
+    <!-- END LEFT SIDEBAR -->
+    <!-- MAIN -->
+    <div class="main">
+        <!-- MAIN CONTENT -->
+        <div class="main-content" style="padding-top: 0px;">
+            <div class="container-fluid">
+                <a name="本科生入学概况"></a>
+                <div class="carousel slide" id="myCarousel">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+                        <li data-slide-to="1" data-target="#myCarousel" class=""></li>
+                        <li data-slide-to="2" data-target="#myCarousel" class=""></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img alt="" src="/static/img/beiyou.jpeg">
+                            <div style="position:absolute; left:0; top:0; z-index:1;">
+                                <h1 style="margin-left:10%;margin-top:25%;color: white;">北京邮电大学</h1>
+                                <p style="margin-top: 3%;margin-left: 15%;margin-right:15%;color: white;">
+                                    我们分析了北邮不同学院的基本入学信息，并针对学习生活这两方面内容作了细粒度的挖掘和分析。学习方面，就上课期间上网这一行为，在不同时间尺度上进行了分析。生活方面，分析了学生的作息情况，消费情况，和上网情况，将学生上课信息和消费信息进行了整合，挖掘出了学生之间的关系亲密图。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img alt="" src="/static/img/beishi.jpeg" style="width: 100%;">
+                            <div style="position:absolute; left:0; top:0; z-index:1;">
+                                <h1 style="margin-left:10%;margin-top:25%;color: white;">北京师范大学</h1>
+                                <p style="margin-top: 3%;margin-left: 15%;margin-right:15%;color: white;">
+                                    师范大学提供了学生基本入学信息，一卡通消费信息，上网流量信息，三个数据集，具体的，我们除了分析师范大学不同学院人数分布，男女比例，生源地等基本信息之外，还挖掘发现了早起，晚睡人群，并就作息情况进行了分析，同时对学生在校期间的人均消费进行了解读。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img alt="" src="/static/img/nongda.jpeg">
+                            <div style="position:absolute; left:0; top:0; z-index:1;">
+                                <h1 style="margin-left:10%;margin-top:25%;color: white;">中国农业大学</h1>
+                                <p style="margin-top: 3%;margin-left: 15%;margin-right:15%;color: white;">
+                                    分析了本科的基本入学信息，并就不同学院的男女比例进行了分析和解读；分析了学生课表信息，并将所有课程使用中文分词，挖掘出了在农业大学本科教学中出现专业词汇的词频分布，对比挖掘了北邮课程的专业词汇；分析了上网信息，并对学生入睡时间进行了分析。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="left carousel-control" href="http://www.ibootstrap.cn/#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="http://www.ibootstrap.cn/#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+                <!-- OVERVIEW -->
+                <div class="panel panel-headline">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">本科生入学概况</h3>
+                        <p class="panel-subtitle">Sep 1, 2014 - Sep 1, 2017</p>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="fa fa-paper-plane"></i></span>
+                                    <p>
+                                        <span class="number">14,831</span>
+                                        <span class="title">北京邮电大学</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="fa fa-chalkboard-teacher"></i></span>
+                                    <p>
+                                        <span class="number">10,091</span>
+                                        <span class="title">北京师范大学</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="fas fa-tree"></i></span>
+                                    <p>
+                                        <span class="number">11,155</span>
+                                        <span class="title"> 中国农业大学 </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <!--1-三校不同年份入学人数图-->
+                                <div id="headline-chart" style="height:300px;">
+
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="weekly-summary text-center">
+                                    <span class="number">114</span> <span class="percentage"><i
+                                        class="fa fa-caret-up text-success"></i> 2.99%      </span>
+                                    <span class="info-label">北京邮电大学</span>
+                                </div>
+                                <div class="weekly-summary text-center">
+                                    <span class="number">-129</span> <span class="percentage"><i
+                                        class="fa fa-caret-down text-danger"></i> -3.59%</span>
+                                    <span class="info-label">北京师范大学</span>
+                                </div>
+                                <a name="院系分布"></a>
+                                <div class="weekly-summary text-center">
+                                    <span class="number">42</span> <span class="percentage"><i
+                                        class="fa fa-caret-up text-success"></i> 1.49%</span>
+                                    <span class="info-label">中国农业大学</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OVERVIEW -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <!-- RECENT PURCHASES -->
+                        <div class="panel" style="height:340px;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">2017年人数增长/降低变化最大的院系 </h3>
+                                <div class="right">
+                                    <button type="button" class="btn-toggle-collapse"><i
+                                            class="lnr lnr-chevron-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body no-padding">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>学校</th>
+                                        <th>院系</th>
+                                        <th>总人数</th>
+                                        <th>增长率</th>
+                                        <th>状态</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>北邮</td>
+                                        <td>计算机学院</td>
+                                        <td>588</td>
+                                        <td>19.2%</td>
+                                        <td><span class="label label-success">UP</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>北邮</td>
+                                        <td>自动化学院</td>
+                                        <td>197</td>
+                                        <td>-15.8%</td>
+                                        <td><span class="label label-danger">DOWN</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>北师</td>
+                                        <td>艺术与传媒学院</td>
+                                        <td>176</td>
+                                        <td>58.6%</td>
+                                        <td><span class="label label-success">UP</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>北师</td>
+                                        <td>政府管理学院</td>
+                                        <td>103</td>
+                                        <td>-43.7%</td>
+                                        <td><span class="label label-danger">DOWN</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>农大</td>
+                                        <td>工学院</td>
+                                        <td>269</td>
+                                        <td>17.0%</td>
+                                        <td><span class="label label-success">UP</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>农大</td>
+                                        <td>园艺学院</td>
+                                        <td>90</td>
+                                        <td>-17.4%</td>
+                                        <td><span class="label label-danger">DOWN</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- END RECENT PURCHASES -->
+                    </div>
+                    <div class="col-md-5">
+                        <div class="panel panel-headline" style="height:340px;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">本科招生分析</h3>
+                                <p class="panel-subtitle">Analysis of Undergraduate Admissions</p>
+                            </div>
+                            <div class="panel-body">
+                                <p>数据显示，2017年三校的本科招生总人数同比基本持平，但不同院系的招生人数却有着明显的变化。</p>
+                                <p>以北京邮电大学为例，其2017年计算机学院本科招生588人，同比增长19.2%；自动化学院本科招生197人，同比下降15.8%；前几年大幅度扩招的信息与通信工程学院，2017年招生人数同比降低了1.42%。每个数据变化的背后，实质上都印证着社会发展变革的趋势，在信息科技高速发展的大环境下，计算机学院的扩招正是这种时代发展趋势的一个缩影。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- 2-三校院系饼图 -->
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">北邮院系分布</h3>
+                                <div class="right">
+                                    <button type="button" class="btn-toggle-collapse"><i
+                                            class="lnr lnr-chevron-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div id="yuanxi-of-beiyou" style="height:260px;"></div>
+                            </div>
+                        </div>
+                        <!-- END MULTI CHARTS -->
+                    </div>
+                    <div class="col-md-4">
+                        <!-- 2-三校院系饼图 -->
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">北师院系分布</h3>
+                                <div class="right">
+                                    <button type="button" class="btn-toggle-collapse"><i
+                                            class="lnr lnr-chevron-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div id="yuanxi-of-beishi" style="height:260px;"></div>
+                            </div>
+                        </div>
+                        <!-- END MULTI CHARTS -->
+                    </div>
+                    <div class="col-md-4">
+                        <!-- 2-三校院系饼图 -->
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">农大院系分布</h3>
+                                <div class="right">
+                                    <button type="button" class="btn-toggle-collapse"><i
+                                            class="lnr lnr-chevron-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div id="yuanxi-of-nongda" style="height:260px;"></div>
+                            </div>
+                        </div>
+                        <!-- END MULTI CHARTS -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <a name="男女比例"></a>
+                    <div class="col-md-12">
+                        <div class="panel panel-headline" style="height:240px;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">生源地与男女比例</h3>
+                                <p class="panel-subtitle">Analysis of Origins and Sex Ratio</p>
+                            </div>
+                            <div class="panel-body">
+                                <p>统计发现，北京师范大学的女生占比在三所高校中位居第一，高达69.9%；而作为传统工科高校的北京邮电大学，其男生占比在三所高校中首屈一指，达到64.8%。但是，并不是每个学院的男女比例，都如其所属学校整体分布那样“典型”。例如男女比例低至0.278的北京邮电大学人文学院，和高达2.185的北京师范大学的天文系。</p>
+                                <p>同时，通过对三校在校生生源地数据的统计，我们发现不同学校的生源分布也略有不同。北京邮电大学的北京生源占比最高，而北京师范大学和中国农业大学则是山东生源最高。梦想不受限制，无事不能成就。无论性别如何，来自哪里，这些都不会阻碍我们追逐梦想的脚步。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" >
+                        <!-- REALTIME CHART -->
+                        <div class="panel" style="height: 238px;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Girls 百分比</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-md-3" >
+                                <div id="system-load" class="easy-pie-chart" data-percent="100" style="top: 8px;">
+                                    <span class="percent">100</span>
+                                </div>
+                                </div>
+                                <ul class="list-unstyled text-right">
+                                    <br>
+                                    <li>北京邮电大学: &emsp;&emsp;<span>35.2%</span>&emsp;&emsp;&emsp;<span class="label label-danger">LOW</span></li>
+                                    <br>
+                                    <li>北京师范大学: &emsp;&emsp;<span>69.9%</span>&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-success">HIGH</span></li>
+                                    <br>
+                                    <li>中国农业大学: &emsp;&emsp;<span>59.5%</span>&emsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-warning">MEDIUM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- END REALTIME CHART -->
+                    </div>
+                    <div class="col-md-6">
+                        <!-- TASKS -->
+                        <div id = "panel-scrolling-demo" class="panel" >
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Boys/Girls 人数比值</h3>
+                                <div class="right">
+                                    <button type="button" class="btn-toggle-collapse"><i
+                                            class="lnr lnr-chevron-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="list-unstyled task-list">
+                                    <h4>BUPT Top3</h4>
+                                    <li>
+                                        <p>软件学院 <span class="label-percent">3.548</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:78%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:22%"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>计算机学院 <span class="label-percent">3.081</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:75%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:25%"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>自动化学院 <span class="label-percent">2.8879</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:74%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="26" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:26%"></div>
+
+                                        </div>
+                                    </li>
+                                    <h4>BUPT Bottom3</h4>
+                                    <li>
+                                        <p>人文学院 <span class="label-percent">0.278</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:22%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:78%"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>经管学院 <span class="label-percent">0.662</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:40%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:60%"></div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>数字媒体与设计艺术学院 <span class="label-percent">0.772</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="44" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:44%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:56%"></div>
+
+                                        </div>
+                                    </li>
+                                    <h4>BNU TOP3</h4>
+                                    <li>
+                                        <p>天文系 <span class="label-percent">2.185</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:69%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="31" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:31%"></div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>核科学与技术学院 <span class="label-percent">1.417</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="59" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:59%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="41" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:41%"></div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>体育与运动学院 <span class="label-percent">1.303</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:57%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:43%"></div>
+
+                                        </div>
+                                    </li>
+                                    <h4>BNU Bottom3</h4>
+                                    <li>
+                                        <p>汉语文化学院 <span class="label-percent">0.110</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:10%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:90%"></div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>外国语言文学学院 <span class="label-percent">0.155</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:13%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:87%"></div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>新闻传播学院 <span class="label-percent">0.202</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:17%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:83%"></div>
+
+                                        </div>
+                                    </li>
+                                    <h4>CAU TOP3</h4>
+                                    <li>
+                                        <p>工学院 <span class="label-percent">2.131</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:68%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:32%"></div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>信息与电气工程学院 <span class="label-percent">1.246</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:55%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:45%"></div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>水利与水木工程 <span class="label-percent">1.229</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:54%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="46" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:46%"></div>
+
+                                        </div>
+                                    </li>
+                                    <h4>CAU Bottom3</h4>
+                                    <li>
+                                        <p>园艺学院 <span class="label-percent">0.319</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:24%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:76%"></div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>经济管理学院 <span class="label-percent">0.321</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:24%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:76%"></div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>食品科学与营养工程学学院 <span class="label-percent">0.347</span></p>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                 aria-valuenow="26" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:26%"></div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:74%"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- END TASKS -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <a name="生源地"></a>
+                    <div class="col-md-7">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                        <h3 class="panel-title">生源地分布</h3>
+                                    </div>
+                            <div class="panel-body">
+                                <div id="prov" style="height:400px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">三校生源地TOP 4</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="prov_top" style="height:400px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END MAIN -->
+    <div class="clearfix"></div>
+    <footer>
+        <div class="container-fluid">
+            <p class="copyright">Copyright &copy; Parsival All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+<!-- END WRAPPER -->
+<!-- Javascript -->
+<script src="/static/vendor/jquery/jquery.min.js"></script>
+<script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="/static/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+<script src="/static/vendor/chartist/js/chartist.min.js"></script>
+<script src="/static/scripts/klorofil-common.js"></script>
+<!--引入echtarts-->
+<script src="/static/vendor/echart/echarts.min.js"></script>
+<script src="/static/vendor/echart/china.js"></script>
+<script type="text/javascript">
+    $('a[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+
+    //学校总人数
+    function load_total_count_of_student() {
+        // 年数
+        var yearCount = 4;
+        // 学校数
+        var categoryCount = 3;
+
+        var xAxisData = ['北邮', '北师', '农大'];
+        var customData = [];
+        var legendData = ['', '2014', '2015', '2016', '2017'];
+        var dataList = [];
+        // 每个学校四年的总人数
+        var sum = [[3452, 3647, 3809, 3923], [567, 2473, 3590, 3461], [2733, 2744, 2818, 2860]]
+
+        legendData.push('trend');
+        var encodeY = [];
+        for (var i = 0; i < yearCount; i++) {
+            dataList.push([]);
+            encodeY.push(1 + i);
+        }
+
+        for (var i = 0; i < categoryCount; i++) {
+            var customVal = [i];
+            customData.push(customVal);
+            var data = dataList[0];
+            for (var j = 0; j < dataList.length; j++) {
+                dataList[j].push(sum[i][j]);
+                customVal.push(sum[i][j]);
+            }
+        }
+
+        function renderItem(params, api) {
+            var xValue = api.value(0);
+            var currentSeriesIndices = api.currentSeriesIndices();
+            var barLayout = api.barLayout({
+                barGap: '30%', barCategoryGap: '20%', count: currentSeriesIndices.length - 1
+            });
+
+            var points = [];
+            for (var i = 0; i < currentSeriesIndices.length; i++) {
+                var seriesIndex = currentSeriesIndices[i];
+                if (seriesIndex !== params.seriesIndex) {
+                    var point = api.coord([xValue, api.value(seriesIndex)]);
+                    point[0] += barLayout[i - 1].offsetCenter;
+                    point[1] -= 20;
+                    points.push(point);
+                }
+            }
+            var style = api.style({
+                stroke: api.visual('color'),
+                fill: null
+            });
+
+            return {
+                type: 'polyline',
+                shape: {
+                    points: points
+                },
+                style: style
+            };
+        }
+
+        option = {
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: legendData
+            },
+            dataZoom: [{
+                type: 'slider',
+                start: 0,
+                end: 100
+            }, {
+                type: 'inside',
+                start: 0,
+                end: 100
+            }],
+            xAxis: {
+                data: xAxisData
+            },
+            yAxis: {
+                type: 'value',
+                min: 0,
+                max: 4500,
+                splitNumber: 10,
+                name: '入学人数',
+                nameLocation: 'middle',
+                nameTextStyle: {
+                    fontSize: 16,
+                    padding: 40
+                }
+            },
+            series: [{
+                type: 'custom',
+                name: 'trend',
+                renderItem: renderItem,
+                itemStyle: {
+                    normal: {
+                        borderWidth: 2
+                    }
+                },
+                encode: {
+                    x: 0,
+                    y: encodeY
+                },
+                data: customData,
+                z: 100
+            }].concat(echarts.util.map(dataList, function (data, index) {
+                return {
+                    type: 'bar',
+                    animation: false,
+                    name: legendData[index + 1],
+                    itemStyle: {
+                        normal: {
+                            opacity: 0.5
+                        }
+                    },
+                    data: data
+                };
+            }))
+        };
+        var myChart = echarts.init(document.getElementById('headline-chart'));
+        myChart.setOption(option);
+    }
+    load_total_count_of_student();
+
+    //三校院系分布
+    function load_yuanxi_of_beiyou() {
+        var myChart = echarts.init(document.getElementById('yuanxi-of-beiyou'));
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                x: 'left',
+                data: ['计算机学院', '国际学院', '信通院', '经管院']
+            },
+            series: [
+                {
+                    name: '北邮',
+                    type: 'pie',
+                    radius: ['50%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '30',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+                    data: [
+                        {value: 3541, name: '信通院'},
+                        {value: 2676, name: '国际学院'},
+                        {value: 2069, name: '计算机学院'},
+                        {value: 1400, name: '经管院'},
+                        {value: 1299, name: '电子工程学院'},
+                        {value: 902, name: '自动化学院'},
+                        {value: 567, name: '数字媒体与设计艺术学院'},
+                        {value: 564, name: '软件学院'},
+                        {value: 547, name: '理学院'},
+                        {value: 473, name: '网络空间安全学院'},
+                        {value: 432, name: '人文学院'},
+                        {value: 302, name: '现代邮政学院'},
+                        {value: 151, name: '民族教育学院'},
+                        {value: 59, name: '光电信息学院'}
+                    ]
+                }
+            ]
+        };
+        myChart.setOption(option);
+    }
+    load_yuanxi_of_beiyou();
+    function load_yuanxi_of_beishi() {
+        var myChart = echarts.init(document.getElementById('yuanxi-of-beishi'));
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                x: 'left',
+                data: ['政府管理学院', '教育学部', '法学院', '文学院']
+            },
+            series: [
+                {
+                    name: '北师',
+                    type: 'pie',
+                    radius: ['50%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '30',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+                    data: [
+                        {value:1076,name:'教育学部'},
+                        {value:846,name:'经济与工商管理学院'},
+                        {value:591,name:'法学院'},
+                        {value:518,name:'文学院'},
+                        {value:518,name:'心理学院'},
+                        {value:445,name:'政府管理学院'},
+                        {value:441,name:'化学学院'},
+                        {value:420,name:'环境学院'},
+                        {value:397,name:'汉语文化学院'},
+                        {value:390,name:'艺术与传媒学院'},
+                        {value:367,name:'生命科学学院'},
+                        {value:336,name:'外国语言文学学院'},
+                        {value:335,name:'社会发展与公共政策学院'},
+                        {value:319,name:'研究生院珠海分院'},
+                        {value:301,name:'数学科学学院'},
+                        {value:260,name:'历史学院'},
+                        {value:260,name:'物理学系'},
+                        {value:259,name:'哲学学院'},
+                        {value:247,name:'脑与认知科学研究院'},
+                        {value:176,name:'水科学研究院'},
+                        {value:171,name:'刑事法律科学研究院'},
+                        {value:171,name:'信息科学与技术学院'},
+                        {value:161,name:'统计学院'},
+                        {value:143,name:'全球变化与地球系统科学研究院'},
+                        {value:137,name:'体育与运动学院'},
+                        {value:137,name:'新闻传播学院'},
+                        {value:135,name:'马克思主义学院'},
+                        {value:111,name:'核科学与技术学院'},
+                        {value:98,name:'社会学院'},
+                        {value:72,name:'天文系'},
+                        {value:72,name:'协同创新中心'},
+                        {value:69,name:'系统科学学院'},
+                        {value:64,name:'经济与资源管理研究院'},
+                        {value:48,name:'古籍与传统文化研究院'}
+                    ]
+                }
+            ]
+        };
+        myChart.setOption(option);
+    }
+    load_yuanxi_of_beishi();
+    function load_yuanxi_of_nongda() {
+        var myChart = echarts.init(document.getElementById('yuanxi-of-nongda'));
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                x: 'left',
+                data: ['信息与电气工程学院', '烟台研究院', '经管院', '工学院']
+            },
+            series: [
+                {
+                    name: '农大',
+                    type: 'pie',
+                    radius: ['50%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '30',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+                    data: [
+                        {value: 1287, name: '烟台研究院'},
+                        {value: 1023, name: '经管院'},
+                        {value: 1026, name: '工学院'},
+                        {value: 1020, name: '信息与电气工程学院'},
+                        {value: 835, name: '国际学院'},
+                        {value: 738, name: '食品科学与营养工程学院'},
+                        {value: 701, name: '水利与土木工程学院'},
+                        {value: 726, name: '人文与发展学院'},
+                        {value: 649, name: '理学院'},
+                        {value: 567, name: '资源与环境学院'},
+                        {value: 503, name: '生物学院'},
+                        {value: 451, name: '园艺学院'},
+                        {value: 453, name: '动物科学技术学院'},
+                        {value: 422, name: '农学院'},
+                        {value: 392, name: '植物保护学院'},
+                        {value: 362, name: '动物医学院'},
+
+
+                    ]
+                }
+            ]
+        };
+        myChart.setOption(option);
+    }
+    load_yuanxi_of_nongda();
+
+    //三校生源地
+    function load_data_of_prov() {
+        var myChart = echarts.init(document.getElementById('prov'));
+        var option = {
+            title: {
+                left: 'center'
+            },
+            tooltip: {
+                trigger: 'item'
+            },
+            legend: {
+                orient: 'vertical',
+                x: 'left',
+                y: 5,
+                data: ['北邮', '北师', '农大']
+            },
+            visualMap: {
+                min: 0,
+                max: 3000,
+                left: 'left',
+                top: 160,
+                text: ['高', '低'],           // 文本，默认为数值文本
+                calculable: true,
+                inRange: {
+                    color: ['#A5CC82', '#00467F'] // 蓝绿
+                }
+            },
+            toolbox: {
+                show: true,
+                orient: 'vertical',
+                left: 'right',
+                top: 'center',
+                feature: {
+                    dataView: {readOnly: false},
+                    restore: {},
+                    saveAsImage: {}
+                }
+            },
+            series: [
+                {
+                    name: '北邮',
+                    type: 'map',
+                    mapType: 'china',
+                    y: 10,
+                    roam: false,
+                    label: {
+                        normal: {
+                            show: true
+                        },
+                        emphasis: {
+                            show: true
+                        }
+                    },
+                    data: [
+                        {name: '南海诸岛', value: 0, itemStyle: {normal: {opacity: 0, label: {show: false}}}},//去掉南海诸岛
+                        {name: "安徽", value: 659},
+                        {name: "澳门", value: 4},
+                        {name: "北京", value: 1346},
+                        {name: "福建", value: 426},
+                        {name: "甘肃", value: 399},
+                        {name: "广东", value: 542},
+                        {name: "广西", value: 539},
+                        {name: "贵州", value: 309},
+                        {name: "海南", value: 205},
+                        {name: "河北", value: 902},
+                        {name: "河南", value: 824},
+                        {name: "黑龙江", value: 483},
+                        {name: "湖北", value: 507},
+                        {name: "湖南", value: 565},
+                        {name: "吉林", value: 348},
+                        {name: "江苏", value: 208},
+                        {name: "江西", value: 482},
+                        {name: "辽宁", value: 631},
+                        {name: "内蒙古", value: 302},
+                        {name: "宁夏", value: 213},
+                        {name: "青海", value: 84},
+                        {name: "山东", value: 694},
+                        {name: "山西", value: 583},
+                        {name: "陕西", value: 454},
+                        {name: "上海", value: 138},
+                        {name: "四川", value: 635},
+                        {name: "台湾", value: 9},
+                        {name: "天津", value: 429},
+                        {name: "西藏", value: 57},
+                        {name: "香港", value: 9},
+                        {name: "新疆", value: 357},
+                        {name: "云南", value: 303},
+                        {name: "浙江", value: 241},
+                        {name: "重庆", value: 327}
+                    ]
+                },
+                {
+                    name: '北师',
+                    type: 'map',
+                    y: 0,
+                    mapType: 'china',
+                    label: {
+                        normal: {
+                            show: true
+                        },
+                        emphasis: {
+                            show: true
+                        }
+                    },
+                    data: [
+                        {name: '南海诸岛', value: 0, itemStyle: {normal: {opacity: 0, label: {show: false}}}},//去掉南海诸岛
+                        {name: "安徽", value: 686},
+                        {name: "澳门", value: 0},
+                        {name: "北京", value: 1214},
+                        {name: "福建", value: 606},
+                        {name: "甘肃", value: 342},
+                        {name: "广东", value: 328},
+                        {name: "广西", value: 377},
+                        {name: "贵州", value: 305},
+                        {name: "海南", value: 42},
+                        {name: "河北", value: 1671},
+                        {name: "河南", value: 1904},
+                        {name: "黑龙江", value: 700},
+                        {name: "湖北", value: 726},
+                        {name: "湖南", value: 668},
+                        {name: "吉林", value: 679},
+                        {name: "江苏", value: 428},
+                        {name: "江西", value: 749},
+                        {name: "辽宁", value: 712},
+                        {name: "内蒙古", value: 483},
+                        {name: "宁夏", value: 114},
+                        {name: "青海", value: 77},
+                        {name: "山东", value: 2098},
+                        {name: "山西", value: 1252},
+                        {name: "陕西", value: 448},
+                        {name: "上海", value: 21},
+                        {name: "四川", value: 1012},
+                        {name: "台湾", value: 0},
+                        {name: "天津", value: 178},
+                        {name: "西藏", value: 77},
+                        {name: "香港", value: 0},
+                        {name: "新疆", value: 337},
+                        {name: "云南", value: 417},
+                        {name: "浙江", value: 415},
+                        {name: "重庆", value: 672}
+                    ]
+                },
+                {
+                    name: '农大',
+                    type: 'map',
+                    y: 0,
+                    mapType: 'china',
+                    label: {
+                        normal: {
+                            show: true
+                        },
+                        emphasis: {
+                            show: true
+                        }
+                    },
+                    data: [
+                        {name: '南海诸岛', value: 0, itemStyle: {normal: {opacity: 0, label: {show: false}}}},//去掉南海诸岛                {name:"安徽",value:337},
+                        {name: "澳门", value: 0},
+                        {name: "北京", value: 840},
+                        {name: "福建", value: 182},
+                        {name: "甘肃", value: 272},
+                        {name: "广东", value: 246},
+                        {name: "广西", value: 253},
+                        {name: "贵州", value: 196},
+                        {name: "海南", value: 33},
+                        {name: "河北", value: 531},
+                        {name: "河南", value: 622},
+                        {name: "黑龙江", value: 272},
+                        {name: "湖北", value: 213},
+                        {name: "湖南", value: 325},
+                        {name: "吉林", value: 194},
+                        {name: "江苏", value: 280},
+                        {name: "江西", value: 262},
+                        {name: "辽宁", value: 293},
+                        {name: "内蒙古", value: 303},
+                        {name: "宁夏", value: 51},
+                        {name: "青海", value: 43},
+                        {name: "山东", value: 1721},
+                        {name: "山西", value: 341},
+                        {name: "陕西", value: 349},
+                        {name: "上海", value: 52},
+                        {name: "四川", value: 477},
+                        {name: "台湾", value: 0},
+                        {name: "天津", value: 211},
+                        {name: "西藏", value: 67},
+                        {name: "香港", value: 0},
+                        {name: "新疆", value: 330},
+                        {name: "云南", value: 299},
+                        {name: "浙江", value: 330},
+                        {name: "重庆", value: 267}
+                    ]
+                }
+
+            ]
+        };
+        myChart.setOption(option);
+    }
+    load_data_of_prov();
+
+    function load_data_of_prov_top() {
+        var myChart = echarts.init(document.getElementById('prov_top'));
+        var option = {
+            legend: {
+                data: ['北京', '河北','河南','山东']
+            },
+            grid: {
+                left: 140,
+                y:45
+            },
+            xAxis: {
+                axisLine: {
+                    lineStyle: {color: '#ccc'}
+                },
+                axisLabel: {
+                    textStyle: {color: '#777'},
+                    formatter: '{value} %'
+                },
+            },
+            yAxis: [
+                {
+                inverse: true,
+                splitLine: {
+                    show: true
+                },
+                axisTick: {
+                    length: 100,
+                    lineStyle: {color: '#ccc'}
+                },
+                axisLine: {
+                    lineStyle: {color: '#ccc'}
+                },
+                data: ['-','-','-']
+            },  {
+                //name: 'TOP 4 生源城市',
+                nameLocation: 'start',
+                nameTextStyle: {
+                    fontWeight: 'bold',
+                    color: '#000',
+                    fontSize : 15
+                },
+                position: 'left',
+        // 		学校名与省份名间距
+                offset: 110,
+                axisLine: {
+                    onZero: false,
+                    show: false
+                },
+                axisTick: {
+                    length: 200,
+                    inside: true,
+                    lineStyle: {color: '#ccc'}
+                },
+                axisLabel: {
+                    fontWeight: 'bold',
+                    fontSize:15,
+                    inside: true
+                },
+                inverse: true,
+                data: ['BUPT', 'BNU', 'CAU'],
+
+            }],
+            series: [{
+                name:"北京",
+                type: 'bar',
+                data:[9.47, 6.15, 8.24],
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'left',
+                        textStyle: {
+                            color: '#000',
+                            fontWeight : 'normal',
+                            fontSize : 15
+                        },
+                        formatter: '北京',
+                    }
+                }
+            }, {
+                name:"河北",
+                type: 'bar',
+                data:[6.35, 8.47, 5.21],
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'left',
+                        textStyle: {
+                            color: '#000',
+                            fontWeight : 'normal',
+                            fontSize : 15
+                        },
+                        formatter: '河北',
+                    }
+                }
+            },{
+                name:"河南",
+                type: 'bar',
+                data:[5.8, 8.47, 6.1],//百分数
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'left',
+                        textStyle: {
+                            color: '#000',
+                            fontWeight : 'normal',
+                            fontSize : 15
+                        },
+                        formatter: '河南',
+                    }
+                }
+            },{
+                name:"山东",
+                type: 'bar',
+                data:[4.88, 10.63, 16.89],//百分数
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'left',
+                        textStyle: {
+                            color: '#000',
+                            fontWeight : 'normal',
+                            fontSize : 15
+                        },
+                        formatter: '山东',
+                    }
+                }
+            }]
+        };
+        myChart.setOption(option);
+    }
+    load_data_of_prov_top();
+
+
+    // 女生百分比可动百分图
+    var sysLoad = $('#system-load').easyPieChart({
+        size: 130,
+        barColor: function (percent) {
+            if(percent === 59.5){
+                return 'rgb(240,173,78)'
+            }else if(percent === 35.2){
+                return 'rgb(217,83,79)'
+            }else if(percent === 69.9){
+                return 'rgb(92,184,92)'
+            }else{
+                return 'rgb(200,200,200)'
+            }
+        },
+        trackColor: 'rgba(245, 245, 245, 0.8)',
+        scaleColor: false,
+        lineWidth: 5,
+        lineCap: "square",
+        animate: 800
+    });
+
+    var updateInterval = 3000; // in milliseconds
+    var i = 1;
+
+    setInterval(function () {
+        var randomVal;
+        var num = [59.5, 35.2, 69.9];
+        randomVal = num[i % 3];
+        i = i + 1;
+        if (i === 3) {
+            i = 0;
+        }
+        sysLoad.data('easyPieChart').update(randomVal);
+        sysLoad.find('.percent').text(randomVal);
+    }, updateInterval);
+
+</script>
+</body>
+
+</html>

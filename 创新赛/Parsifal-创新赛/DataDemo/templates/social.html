@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="/static/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-brands.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-brands.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-regular.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-regular.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-solid.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fa-solid.min.css">
+    <!--<link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome-all.min.css">-->
+
+    <link rel="stylesheet" href="/static/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="/static/vendor/chartist/css/chartist-custom.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="/static/css/demo.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/favicon.png">
+</head>
+
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="brand">
+        <a href="/index"><span style="font-size: 20px;"><i class="fas fa-graduation-cap"></i>&emsp;智慧校园云平台</span></a>
+    </div>
+    <div class="container-fluid">
+        <div class="navbar-btn">
+            <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
+        </div>
+        <div class="navbar-btn navbar-btn-right">
+            <a class="btn btn-success update-pro"
+               href="/download" target="_self"
+               title="Download PPT" target="_blank"><i class="fa fa-rocket"></i> <span> PPT 下载</span></a>
+        </div>
+
+        <div id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="/static/img/member.jpeg"
+                                                                                    class="img-circle" alt="Avatar">
+                        <span>Parsifal</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><img src="/static/img/member.jpeg"
+                                             style="width: 20px;height: 20px;margin-right: 10px;" class="img-circle"
+                                             alt="Avatar"><span>杜欣远</span></a>
+                        </li>
+                        <li><a href="#"><img src="/static/img/member.jpeg"
+                                             style="width: 20px;height: 20px;margin-right: 10px;" class="img-circle"
+                                             alt="Avatar"><span>冯玥</span></a>
+                        </li>
+                        <li><a href="#"><img src="/static/img/member.jpeg"
+                                             style="width: 20px;height: 20px;margin-right: 10px;" class="img-circle"
+                                             alt="Avatar"><span>李想</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- LEFT SIDEBAR -->
+    <div id="sidebar-nav" class="sidebar">
+        <div class="sidebar-scroll">
+            <nav>
+                <ul class="nav">
+                    <!--<li><a href="index.html" class="active"><i class="lnr lnr-home"></i> <span>Campus Overview</span></a></li>-->
+                    <li>
+                        <a href="#subPages1" data-toggle="collapse" class="collapsed"><i class="lnr lnr-home"></i>
+                            <span>校园概况</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="subPages1" class="collapse in ">
+                            <ul class="nav">
+                                <li><a href="/index#本科生入学概况" class=""><i class="lnr lnr-chart-bars"></i>
+                                    <span>在校生人数</span></a></li>
+                                <li><a href="/index#院系分布" class=""><i class="lnr lnr-apartment"></i>
+                                    <span>院系分布</span></a>
+                                </li>
+                                <li><a href="/index#男女比例" class=""><i class="lnr lnr-heart"></i> <span>男女比例</span></a>
+                                </li>
+                                <li><a href="/index#生源地" class=""><i class="lnr lnr-earth"></i> <span>生源地</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#subPages2" data-toggle="collapse" class="collapsed"><i class="lnr lnr-chart-bars"></i>
+                            <span>校园生活</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="subPages2" class="collapse in">
+                            <ul class="nav">
+                                <li><a href="/life#课程统计" class=""><i class="lnr lnr-pencil"></i> <span>学习</span></a>
+                                </li>
+                                <li><a href="/life#作息" class=""><i class="lnr lnr-eye"></i> <span>作息</span></a></li>
+                                <li><a href="/life#消费" class=""><i class="lnr lnr-cart"></i> <span>消费</span></a></li>
+                                <li><a href="/life#上网" class=""><i class="lnr lnr-laptop-phone"></i>
+                                    <span>上网</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/social"><i class="lnr lnr-users"></i>
+                            <span>校园社交</span> </a>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- END LEFT SIDEBAR -->
+    <!-- MAIN -->
+    <div class="main">
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="container-fluid">
+                <!-- OVERVIEW -->
+                <div class="panel panel-headline">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">基于LCS算法的校园社交网络</h3>
+                        <p class="panel-subtitle">Jan 1, 2017 - Dec 1, 2017</p>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="social" style="height:700px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--社交网络的构建-->
+                    <div class="col-md-12">
+                        <div class="panel panel-headline">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">社交网络的构建</h3>
+                                <p class="panel-subtitle">Institution of social network</p>
+                            </div>
+                            <div class="panel-body">
+                                <p>我们旨在通过挖掘不同学生之间的社交关系，探寻学生在课下的社交规律和模式，给校园活动组织者以启发，共同推进更多人参与的，更富有活力的校园活动，同时本研究内容对管理和优化社交关系，建立数字智慧校园更是具有积极意义。研究人群是2017-2018秋季学期通信原理课程的所有学生，共计90人。
+                                </P>
+                                <P>社交网络的构建，最核心的是人与人之间亲密度的衡量。本平台使用校园一卡通消费记录来计算人群亲密度。消费分为洗澡，餐费，商场三种类型，对于每一种类型的消费我们构建了个人的消费行为序列，并对每个序列按照时间进行排序，序列中每一个元素对应为时间戳的大小。然后，我们使用最长公共子序列（LCS , longest common sequence）算法对两个人的消费序列进行匹配，如果两个序列的时间戳相差在一定范围内（餐费阈值5min，洗澡阈值3min，商场阈值3min），我们就认为两个序列中的元素匹配。按照两个消费行为序列的匹配度的大小，我们能够得到所有人之间的亲密度大小，进而构建社交网络。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--三种模式表格-->
+                    <div class="col-md-12">
+                        <!-- RECENT PURCHASES -->
+                        <div class="panel" style="height:230px;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">2015级本科生社交关系挖掘（部分） </h3>
+                                <div class="right">
+                                    <button type="button" class="btn-toggle-collapse"><i
+                                            class="lnr lnr-chevron-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body no-padding">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>ID 1</th>
+                                        <th>ID 2</th>
+                                        <th>性别 1</th>
+                                        <th>性别 2</th>
+                                        <th>籍贯 1</th>
+                                        <th>籍贯 2</th>
+                                        <th>吃饭</th>
+                                        <th>购物</th>
+                                        <th>洗澡</th>
+                                        <th>亲密度</th>
+                                        <th>推测关系</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>69bf****38f0</td>
+                                        <td>cd41****761e</td>
+                                        <td>男</td>
+                                        <td>男</td>
+                                        <td>安徽</td>
+                                        <td>陕西</td>
+                                        <td>50</td>
+                                        <td>3</td>
+                                        <td>137</td>
+                                        <td>43.9</td>
+                                        <td><span class="label label-success">好友</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2515****4199</td>
+                                        <td>9697****5d6f</td>
+                                        <td>女</td>
+                                        <td>女</td>
+                                        <td>江西</td>
+                                        <td>河南</td>
+                                        <td>103</td>
+                                        <td>0</td>
+                                        <td>35</td>
+                                        <td>37.9</td>
+                                        <td><span class="label label-warning">好友</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>b4e4****3942</td>
+                                        <td>4926****01f4</td>
+                                        <td>男</td>
+                                        <td>女</td>
+                                        <td>湖南</td>
+                                        <td>河南</td>
+                                        <td>75</td>
+                                        <td>16</td>
+                                        <td>8</td>
+                                        <td>32.1</td>
+                                        <td><span class="label label-danger">情侣</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- END RECENT PURCHASES -->
+                    </div>
+                    <!--典型社交模式分析-->
+                    <div class="col-md-6">
+                        <div class="panel panel-headline" style="height:495px;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">社交关系分析</h3>
+                                <p class="panel-subtitle">Analysis of social network</p>
+                            </div>
+                            <div class="panel-body">
+                                <p>由于用餐时间和洗澡时间分布集中在固定的几个时间点上，所以可能会对计算结果带来负面影响，所以我们降低了用餐和洗澡两个部分对亲密度的贡献权值，而同时出现在超市消费这个事件相对于前两个，更能够体现亲密度，超市消费的人流分布也相对更均匀，所以我们加大了超市消费对亲密度贡献的权值，最终权值的分配为用餐0.3，洗澡0.2，超市0.5。
+                                </P>
+                                <P>对关系亲密度的计算结果，我们抽取了关系亲密度最高的三对关系进行分析，从结果我们可以看到亲密度最高的两位男同学，他们的亲密度贡献主要来源于一起去洗澡和一起去用餐。他们对一起去超市购物并没有表现出很大的兴趣。而排名第二的两位女同学我们可以看到，她们的亲密度贡献主要来源于一起去吃饭和洗澡，其中一起吃饭在亲密度贡献中起主导作用。对于第三对朋友，我们可以看到，他们一起在超市购物的次数要远远领先于前两对关系。而之前我们分析过，一起在超市购物是非常强的亲密关系特征，我们了解到普通男生和女生能够一起在超市购物的次数要远远小于第三对关系中所表现出来的次数，而同时第三对关系还有非常多的一起用餐的记录，由此我们推断，第三对是男女朋友关系。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--算法-->
+                    <div class="col-md-6">
+                        <div class="panel panel-headline" style="height:495px;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">LCS算法说明</h3>
+                                <p class="panel-subtitle">Algorithm description of LCS</p>
+                            </div>
+                            <div class="panel-body">
+                                <p>根据LCS的求解性质，我们给出求解该问题的动态规划算法：</p>
+                                <p>输入：两条待计算的序列 tra1和tra2</p>
+                                <p>输出：两条轨迹的相似度</p>
+                                <p>C[i, j]对应i长度tra1序列和j长度tra2序列的相似度，初始化为0。</p>
+                                <pre>
+LCS-LENGTH(X, Y)
+&emsp;&emsp;m = len(tra1)
+&emsp;&emsp;n = len(tra2)
+&emsp;&emsp;c = [[0]*n]*m
+&emsp;&emsp;for i = 0 to m
+&emsp;&emsp;&emsp;&emsp;for j = 0 to n
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if xi  = yj
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;c[i, j] = c[i - 1, j - 1] + 1
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;else
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;c[i, j] = max(c[i, j - 1], c[i-1, j])
+&emsp;&emsp;return c[i, j]
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END MAIN -->
+    <div class="clearfix"></div>
+    <footer>
+        <div class="container-fluid">
+            <p class="copyright">Copyright &copy; Parsifal All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+<!-- END WRAPPER -->
+<!-- Javascript -->
+<script src="/static/vendor/jquery/jquery.min.js"></script>
+<script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="/static/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+<script src="/static/vendor/chartist/js/chartist.min.js"></script>
+<script src="/static/scripts/klorofil-common.js"></script>
+<!--引入echarts-->
+<script src="/static/vendor/echart/echarts.min.js"></script>
+<script src="/static/vendor/echart/echarts-wordcloud.js"></script>
+<script src="/static/vendor/echart/echarts-wordcloud.min.js"></script>
+<script src="/static/vendor/echart/dataTool.min.js"></script>
+<script>
+
+    var myChart = echarts.init(document.getElementById('social'));
+    myChart.showLoading();
+    $.get('/static/vendor/social0602.gexf', function (xml) {
+        myChart.hideLoading();
+
+        var graph = echarts.dataTool.gexf.parse(xml);
+        console.log(graph);
+        var categories = [];
+        for (var i = 0; i < 9; i++) {
+            categories[i] = {
+                name: '类目' + i
+            };
+        }
+        graph.nodes.forEach(function (node) {
+            node.itemStyle = null;
+            node.value = node.symbolSize;
+            node.symbolSize /= 1.5;
+            node.label = {
+                normal: {
+                    show: node.symbolSize > 35
+                }
+            };
+        });
+
+        option = {
+            visualMap: {
+                show: true,
+                min: 16,
+                max: 40,
+                y:450,
+                dimension: 0,
+                inRange: {
+                    //点渐变颜色
+                    color: ['#FFEC8B','#FFC1C1','#41B6C4']
+                }
+            },
+            tooltip: {},
+            //线的颜色
+            //color: ['#4a657a'],
+            animationDuration: 1500,
+            animationEasingUpdate: 'quinticInOut',
+            series: [
+                {
+                    type: 'graph',
+                    y:35,
+                    layout: 'none',
+                    data: graph.nodes,
+                    links: graph.links,
+                    categories: categories,
+                    roam: false,
+                    focusNodeAdjacency: true,
+                    itemStyle: {
+                        normal: {
+                            borderColor: '#fff',
+                            borderWidth: 1,
+                            shadowBlur: 10,
+                            shadowColor: 'rgba(0, 0, 0, 0.3)'
+                        }
+                    },
+                    label: {
+                        position: 'right',
+                        formatter: '{b}'
+                    },
+                    lineStyle: {
+                        color: 'source',
+                        width:1,
+                        curveness: 0.3
+                    },
+                    emphasis: {
+                        lineStyle: {
+                            width: 10
+                        }
+                    }
+                }
+            ]
+        };
+
+        myChart.setOption(option);
+    }, 'xml');
+</script>
+</body>
+
+</html>
